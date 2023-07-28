@@ -10,6 +10,7 @@ const HomeSection = () => {
                     <h3>Hello, It's Me</h3>
                     <h1>Yevheniia Shcherbina</h1>
                     <h3>And I'm a React Developer</h3>
+                    {/*Подумать над подключением динамического изменения текста*/}
                     <p>I'm a React/ReactNative Developer with a little commercial experience
                         <br/>Component layout, works with someone's code, debugging, transition old projects to the new syntax, work with saving Data,
                         creating websites by your backend and also for further integration with the backend</p>

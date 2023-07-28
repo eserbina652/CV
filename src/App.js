@@ -5,7 +5,9 @@ import AboutSection from "./components/main/about/AboutSection";
 import ServicesComponent from "./components/services/ServicesComponent";
 import SkillsComponent from "./components/main/skills/SkillsComponent";
 import PortfolioSection from "./components/main/portfolio/PortfolioSection";
-
+import ContactSection from "./components/main/contact/ContactSection";
+import {TopArrowSvg} from "./assets/image";
+import './app.css'
 const App = () => {
     return (
         <div>
@@ -15,6 +17,13 @@ const App = () => {
             <ServicesComponent/>
             <SkillsComponent/>
             <PortfolioSection/>
+            <ContactSection/>
+            <div className="latest-text">
+                <p>Developed with love by Yevheniia Shcherbina Ⓒ 2023</p>
+            </div>
+            <a href="#" className='top'>
+                <TopArrowSvg/>
+            </a>
         </div>
     );
 };
