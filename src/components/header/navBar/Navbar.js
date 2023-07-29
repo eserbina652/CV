@@ -1,16 +1,16 @@
 import React from 'react';
-import './index.css'
+import './index.css';
 const Navbar = () => {
-    return (
-        // разобраться с переходами
-        <nav className='navbar'>
-            <a href='#home'>Home</a>
-            <a href='#about'>About</a>
-            <a href='#services'>Skill</a>
-            <a href='#skills'>Portfolio</a>
-            <a href='#contact'>Contact</a>
-        </nav>
-    );
+  return (
+    <nav className="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  );
 };
 
 export default Navbar;

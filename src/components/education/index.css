@@ -8,7 +8,7 @@
 .sub-title {
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    margin: 70px 0;
 }
 
 .sub-title span {
@@ -16,14 +16,14 @@
 }
 
 .container {
-    padding: 90px;
+    /*margin: 50px 10%;*/
 }
 
 .services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    justify-content: space-between;
+    display: flex;
     grid-gap: 40px;
-    margin-top: 50px;
+    margin: 50px 10%;
 }
 
 .services-list div {
@@ -34,7 +34,7 @@
     border-right: 10px;
     border-radius: 20px;
     transition: background-color 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px white;
 }
 
 .services-list div i{
@@ -82,7 +82,22 @@
     transform: translateY(-10px);
 }
 
+.service-el p{
+    font-size: 16px;
+}
 
+.service-el {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*gap: 1rem;*/
+}
+
+.service-el h4{
+    margin-bottom: 1rem;
+    color: #00eeff;
+}
 
 
 
