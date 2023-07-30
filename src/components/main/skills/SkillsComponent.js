@@ -5,7 +5,7 @@ import ProfessionalSkills from './ProfessionalSkills';
 
 const SkillsComponent = () => {
   return (
-    <>
+    <section className="skill-section">
       <h1 className="sub-title">
         My <span>TechnicalSkills</span>
       </h1>
@@ -13,7 +13,7 @@ const SkillsComponent = () => {
         <TechnicalSkills />
         <ProfessionalSkills />
       </section>
-    </>
+    </section>
   );
 };
 

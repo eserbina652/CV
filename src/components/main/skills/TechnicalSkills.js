@@ -1,6 +1,20 @@
 import React from 'react';
 import SkillsBar from './SkillsBar';
-import { CssSvg, SkillsHTMLSvg } from '../../../assets/image';
+import {
+  CssSvg,
+  ErrorsSvg,
+  GitHubSvg,
+  GitSvg,
+  JQuerySvg,
+  JsSvg,
+  ReactSvg,
+  ReduxSvg,
+  RoutingSvg,
+  SkillsHTMLSvg,
+  TestSvg,
+  UndefSvg,
+  WindowsSvg,
+} from '../../../assets/image';
 import './index.css';
 
 const skillsData = [
@@ -17,78 +31,78 @@ const skillsData = [
   {
     skill: 'JavaScript/TypeScript',
     additionalClass: 'js',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <JsSvg />,
   },
   {
-    skill: 'React',
+    skill: 'React/ReactNative',
     additionalClass: 'react',
-    svgComponent: <SkillsHTMLSvg />,
-  },
-  {
-    skill: 'ReactNative',
-    additionalClass: 'rNative',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <ReactSvg />,
   },
   {
     skill: 'React-Router',
     additionalClass: 'rRouter',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <RoutingSvg />,
   },
   {
     skill: 'Redux/Redux-Toolkit/MobX',
     additionalClass: 'redux',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <ReduxSvg />,
   },
   {
-    skill: 'RTK Query/Axios',
+    skill: 'jQuery/RTK Query/Axios',
     additionalClass: 'query',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <JQuerySvg />,
   },
   {
     skill: 'Jest/E2e/Integration',
     additionalClass: 'tests',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <TestSvg />,
   },
   {
     skill: 'Formik',
     additionalClass: 'formik',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <UndefSvg />,
   },
   {
     skill: 'Yup',
     additionalClass: 'yup',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <ErrorsSvg />,
   },
   {
     skill: 'i18n',
     additionalClass: 'i18n',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <UndefSvg />,
   },
   {
     skill: 'Styled-components',
     additionalClass: 'styled',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <UndefSvg />,
   },
   {
     skill: 'Git',
     additionalClass: 'git',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <GitSvg />,
+  },
+  {
+    skill: 'GitHub',
+    additionalClass: 'gitHub',
+    svgComponent: <GitHubSvg />,
   },
   {
     skill: 'Linux',
     additionalClass: 'linux',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <UndefSvg />,
   },
   {
     skill: 'Windows',
     additionalClass: 'windows',
-    svgComponent: <SkillsHTMLSvg />,
+    svgComponent: <WindowsSvg />,
   },
 ];
 const TechnicalSkills = () => {
   return (
     <div className="container" id="skills">
-      <h1 className="heading1">Technical TechnicalSkills</h1>
+      <h1 className="heading1">Technical Skills</h1>
       <div className="Technical-bars">
         {skillsData.map((skillEl, i) => (
           <SkillsBar

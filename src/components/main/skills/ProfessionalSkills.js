@@ -4,7 +4,7 @@ import RadialBar from './RadialBar';
 
 const professionalSkillsData = [
   {
-    presents: '90%',
+    presents: '95%',
     text: 'Team Work',
     id: 1,
   },
@@ -14,15 +14,20 @@ const professionalSkillsData = [
     id: 2,
   },
   {
-    presents: '90%',
-    text: 'Creativity',
+    presents: '95%',
+    text: 'Fast learning',
     id: 3,
+  },
+  {
+    presents: '85%',
+    text: 'Problem Solving',
+    id: 4,
   },
 ];
 const ProfessionalSkills = () => {
   return (
     <div className="container1">
-      <h1 className="heading1">Professional TechnicalSkills</h1>
+      <h1 className="heading1">Professional Skills</h1>
       {professionalSkillsData.map((skill) => (
         <RadialBar
           key={skill.id}

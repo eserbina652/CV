@@ -1,12 +1,7 @@
 import React from 'react';
-import {
-  GitHubSvg,
-  LinkedInSvg,
-  PhoneSvg,
-  SendSvg,
-  TelegramSvg,
-} from '../../../assets/image';
+import { PhoneSvg, SendSvg } from '../../../assets/image';
 import './index.css';
+import HoveredLinks from '../../links/hoveredLinks/HoveredLinks';
 const ContactSection = () => {
   return (
     <section className="contact" id="contact">
@@ -36,16 +31,7 @@ const ContactSection = () => {
           </li>
         </div>
         <div className="contact-icons">
-          {/*Добавить ховер на иконки*/}
-          <a href="#">
-            <LinkedInSvg color={'#00eeff'} />
-          </a>
-          <a href="#">
-            <GitHubSvg />
-          </a>
-          <a href="#">
-            <TelegramSvg />
-          </a>
+          <HoveredLinks />
         </div>
       </div>
       <div className="contact-form">

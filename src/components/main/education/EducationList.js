@@ -1,12 +1,6 @@
 import React from 'react';
 import './index.css';
-const EducationList = ({
-  svgComponent,
-  title,
-  description,
-  href,
-  secondTitle,
-}) => {
+const EducationList = ({ title, description, secondTitle }) => {
   return (
     <div className="service-el">
       <h2>{title}</h2>

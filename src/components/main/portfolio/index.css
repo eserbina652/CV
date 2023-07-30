@@ -1,9 +1,5 @@
-.main-text{
-    padding-top: 130px;
-    margin-top: 200px;
-}
-
 .main-text h2{
+    margin: 70px 0;
     font-size: 60px;
     line-height: 1;
     text-align: center;
@@ -15,14 +11,31 @@
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
+    gap: 20px;
+}
+
+.portfolio {
+    width: 100%;
+}
+
+.portfolio-section {
+    width: 100%;
+    padding: 50px 10%;
 }
 
 .row {
+    color: white;
+    display: flex;
+    height: fit-content;
+    max-height: 565px;
+    overflow: hidden;
+    gap: 20px;
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 58px;
     cursor: pointer;
+    box-shadow: 0px 0px 9px 3px rgba(0, 238, 255, 0.7);
 }
 
 .row img{
@@ -35,7 +48,7 @@
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1), #00eeff);
+    background: linear-gradient(rgba(0,0,0,0.75), #001157);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -51,23 +64,27 @@
 }
 
 .layer h5 {
-    color: black;
+    color: #00eeff;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .layer p {
-    color: black;
+    color: white;
     font-size: 1rem;
     line-height: 1.8;
+}
+
+.layer a:hover {
+    background: #001b88;
 }
 
 .layer a {
     color: #ff004f;
     margin-top: 20px;
     font-size: 20px;
-    background: white;
+    background: #00eeff;
     width: 60px;
     height: 60px;
     display: flex;
@@ -82,4 +99,43 @@
 
 .row:hover .layer {
     height: 100%;
+}
+
+.technologies {
+    color: #00eeff!important;
+}
+
+.technologies span {
+    color: white;
+}
+
+.layer-links-box-wrap {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.layer-links-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer-links-box p {
+    color: #00eeff;
+}
+
+.layer-text-box p{
+    color: #00eeff;
+}
+.layer-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
 }

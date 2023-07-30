@@ -1,6 +1,6 @@
 import React from 'react';
 import EducationList from './EducationList';
-import { School, BrainSvg, CodeSVG, CompScienceSvg } from '../../assets/image';
+import { School, BrainSvg, CompScienceSvg } from '../../../assets/image';
 import './index.css';
 
 const servicesData = [
@@ -31,7 +31,7 @@ const servicesData = [
 ];
 const EducationComponent = () => {
   return (
-    <section>
+    <section className="education">
       <div className="services" id="education">
         <div className="container">
           <h1 className="sub-title">
