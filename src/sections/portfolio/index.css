@@ -10,9 +10,8 @@
 }
 
 .portfolio-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
     gap: 20px;
+    display: flex;
 }
 
 .portfolio {
@@ -138,4 +137,14 @@
     justify-content: center;
     align-items: center;
     width: 45%;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .portfolio-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .row {
+        max-width: 65%;
+    }
 }

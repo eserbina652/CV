@@ -1,0 +1,23 @@
+.mainTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+
+/*.mainTitle h2 {*/
+/*    font-size: 60px;*/
+/*}*/
+
+.mainTitle span{
+    color: #00eeff;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .mainTitle{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}

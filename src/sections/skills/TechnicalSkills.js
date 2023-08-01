@@ -14,7 +14,7 @@ import {
   TestSvg,
   UndefSvg,
   WindowsSvg,
-} from '../../../assets/image';
+} from '../../assets/image';
 import './index.css';
 
 const skillsData = [

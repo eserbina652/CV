@@ -1,14 +1,13 @@
 import React from 'react';
-import AvatarComponent from '../../avatar/AvatarComponent';
+import AvatarComponent from '../../components/avatar/AvatarComponent';
 import './index.css';
-import MoreBtn from '../../buttons/moreBtn/MoreBtn';
+import MoreBtn from '../../components/buttons/moreBtn/MoreBtn';
+import { MyPhoto } from '../../assets/image';
+import MainTitle from '../../components/title/MainTitle';
 const skillsArrayData = [
   'Dynamic & responsive website design.',
   'State management for seamless experiences.',
-  'User-friendly form validation & localization.',
   'Maintainable UI component crafting.',
-  'Efficient handling of API data.',
-  'Thorough testing for robust apps.',
   'Effective troubleshooting of complex issues.',
   'Adapting projects to latest standards.',
   'Collaborating within diverse teams.',
@@ -16,7 +15,6 @@ const skillsArrayData = [
   'Deploying applications for accessibility.',
   'Proficiency across multiple operating systems.',
   'Visually captivating functional websites.',
-  'Collaborative design tool utilization.',
   'Smooth navigation implementation.',
   'Prioritizing performance & accessibility.',
   'Secure data handling & API interactions.',
@@ -26,12 +24,16 @@ const AboutSection = () => {
   return (
     <section className="about" id="about">
       <div className="about-img">
-        <AvatarComponent styles={{ width: '100%', height: '100%' }} />
+        <AvatarComponent
+          src={MyPhoto}
+          styles={{ width: '100%', height: '100%' }}
+        />
       </div>
       <div className="about-text">
-        <h2>
-          About <span>Me</span>
-        </h2>
+        <MainTitle simpleText="About" colorText="Me" />
+        {/*<h2>*/}
+        {/*  About <span>Me</span>*/}
+        {/*</h2>*/}
         <h4>React Developer</h4>
         <span>
           You can count on me at:

@@ -379,6 +379,25 @@ section{
     padding: 50px 10%;
 }
 
+@media (min-width: 769px) and (max-width: 1024px){
+    .skills-component {
+        justify-content: center;
+        gap: 70px;
+    }
+    .container1{
+        flex-direction: row;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .heading1 {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .text {
+        display: flex;
+        align-items: center;
+    }
+}
 
 
 

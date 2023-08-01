@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const iAmData = [
-  'Frontend Developer',
-  'Android App Developer',
-  'UI/UX Designer',
-];
+const iAmData = ['Frontend Developer', 'Android App Developer'];
 
 const JobsTyping = () => {
   const [jobs, setJobs] = useState('');

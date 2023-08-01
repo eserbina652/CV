@@ -1,5 +1,5 @@
 import React from 'react';
-import '../skills/index.css';
+import './index.css';
 
 const RadialBar = ({ presents, text, id, isSkills = true }) => {
   return (

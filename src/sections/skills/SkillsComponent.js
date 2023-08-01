@@ -7,7 +7,7 @@ const SkillsComponent = () => {
   return (
     <section className="skill-section">
       <h1 className="sub-title">
-        My <span>TechnicalSkills</span>
+        My <span>Skills</span>
       </h1>
       <section className="skills-component">
         <TechnicalSkills />

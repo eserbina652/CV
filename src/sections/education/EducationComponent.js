@@ -1,7 +1,8 @@
 import React from 'react';
 import EducationList from './EducationList';
-import { School, BrainSvg, CompScienceSvg } from '../../../assets/image';
+import { School, BrainSvg, CompScienceSvg } from '../../assets/image';
 import './index.css';
+import MainTitle from '../../components/title/MainTitle';
 
 const servicesData = [
   {
@@ -34,9 +35,7 @@ const EducationComponent = () => {
     <section className="education">
       <div className="services" id="education">
         <div className="container">
-          <h1 className="sub-title">
-            My <span>Education</span>
-          </h1>
+          <MainTitle simpleText="My" colorText="Education" />
           <div className="services-list">
             {servicesData.map((service) => (
               <EducationList

@@ -21,3 +21,10 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .avatar-wrap {
+        width: 250px;
+        height: 250px;
+    }
+}

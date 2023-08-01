@@ -1,13 +1,13 @@
 import React from 'react';
 import './index.css';
-import HoveredLinks from '../../links/hoveredLinks/HoveredLinks';
-import AvatarComponent from '../../avatar/AvatarComponent';
-import MoreBtn from '../../buttons/moreBtn/MoreBtn';
-import JobsTyping from '../../customElements/JobsTyping';
+import HoveredLinks from '../../components/links/hoveredLinks/HoveredLinks';
+import AvatarComponent from '../../components/avatar/AvatarComponent';
+import MoreBtn from '../../components/buttons/moreBtn/MoreBtn';
+import JobsTyping from '../../components/customElements/JobsTyping';
 
 const HomeSection = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="home-content">
         <div className="home-description">
           <h3>Hello, It's Me</h3>

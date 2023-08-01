@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { GoToSvg } from '../../../assets/image';
+import { GoToSvg } from '../../assets/image';
 const Project = ({
   img,
   title,

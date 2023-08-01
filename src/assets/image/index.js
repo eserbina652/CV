@@ -27,11 +27,13 @@ const Avatar = require('./avatar.jpeg');
 const FID = require('./Frontend-Developer-_4_.png');
 const RickAndMorty = require('./Frontend-Developer-_2_.png');
 const ShopPinkStore = require('./Frontend-Developer-_3_.png');
+const MyPhoto = require('./myPhoto.jpg');
 export {
   FID,
   Avatar,
   RickAndMorty,
   ShopPinkStore,
+  MyPhoto,
   ErrorsSvg,
   GitSvg,
   JsSvg,

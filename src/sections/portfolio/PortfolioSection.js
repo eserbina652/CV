@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import Project from './Project';
-import { FID, RickAndMorty, ShopPinkStore } from '../../../assets/image';
+import { FID, RickAndMorty, ShopPinkStore } from '../../assets/image';
 
 const portfolioData = [
   {
@@ -31,7 +31,7 @@ const portfolioData = [
     img: ShopPinkStore,
     title: 'React.ts Developer',
     description:
-      'In this project, authorization will be required to enter: username: kminchelle / password: 0lelplR. On the main page, you can enjoy the Canvas, as well as go to the store to buy various goods, and many more interesting things, go and try)',
+      'In this project, authorization will be required to enter: username: kminchelle / password: 0lelplR. On the sections page, you can enjoy the Canvas, as well as go to the store to buy various goods, and many more interesting things, go and try)',
     technology:
       'TypeScript, React(hooks)/React-Router, Redux-Toolkit, Yup, Styled-components, Formik',
     id: 3,

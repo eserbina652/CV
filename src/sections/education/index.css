@@ -6,6 +6,7 @@
 }
 
 .sub-title {
+    width: 100%;
     text-align: center;
     font-size: 60px;
     margin-bottom: 70px;
@@ -25,6 +26,7 @@
     justify-content: space-between;
     display: flex;
     grid-gap: 40px;
+    flex-wrap: wrap;
 }
 
 .services-list div {
@@ -35,7 +37,7 @@
     border-right: 10px;
     border-radius: 20px;
     transition: background-color 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px white;
+    box-shadow: 1px 1px 20px #da05ce, 1px 1px 40px #00eeff;
 }
 
 .services-list div i{
@@ -100,4 +102,15 @@
 }
 
 
-
+@media (min-width: 769px) and (max-width: 1024px){
+    .services-list div {
+        max-width: 680px;
+        justify-content: center;
+    }
+    .services-list {
+        justify-content: center;
+    }
+    .services-list div h2 {
+        font-size: 25px;
+    }
+}

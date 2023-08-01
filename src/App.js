@@ -1,14 +1,15 @@
 import React from 'react';
 import Header from './components/header/Header';
-import HomeSection from './components/main/home/HomeSection';
-import AboutSection from './components/main/about/AboutSection';
-import EducationComponent from './components/main/education/EducationComponent';
-import SkillsComponent from './components/main/skills/SkillsComponent';
-import PortfolioSection from './components/main/portfolio/PortfolioSection';
-import ContactSection from './components/main/contact/ContactSection';
+import HomeSection from './sections/home/HomeSection';
+import AboutSection from './sections/about/AboutSection';
+import EducationComponent from './sections/education/EducationComponent';
+import SkillsComponent from './sections/skills/SkillsComponent';
+import PortfolioSection from './sections/portfolio/PortfolioSection';
+import ContactSection from './sections/contact/ContactSection';
 import { TopArrowSvg } from './assets/image';
 import './app.css';
-import Languages from './components/main/languages/Languages';
+import Languages from './sections/languages/Languages';
+//Todo: dont forget to change all titles to component
 const App = () => {
   return (
     <div className="app-container">

@@ -1,10 +1,9 @@
 .contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 3rem;
     width: 100%;
     padding: 130px 10% 90px 10%;
+    display: flex;
 }
 
 .contact-text h2{
