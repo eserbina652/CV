@@ -1,0 +1,24 @@
+.burgerMenu {
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:70px;
+    padding: 50px 10%;
+    z-index: 100;
+    background: #091b2a;
+}
+
+.burger-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}

@@ -2,13 +2,12 @@ import React from 'react';
 import { PhoneSvg, SendSvg } from '../../assets/image';
 import './index.css';
 import HoveredLinks from '../../components/links/hoveredLinks/HoveredLinks';
+import MainTitle from '../../components/title/MainTitle';
 const ContactSection = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact-text">
-        <h2>
-          Contact <span>Me</span>
-        </h2>
+        <MainTitle simpleText="Contact" colorText="Me" />
         <h4>Let's work Together</h4>
         <p>
           If you hire me as a Frontend developer, I feel that you will be
@@ -22,7 +21,7 @@ const ContactSection = () => {
         </p>
         <div className="contact-list">
           <li>
-            <a href="#">
+            <a href="mailto:eserbina652@gmail.com">
               <SendSvg />
             </a>
             eserbina652@gmail.com

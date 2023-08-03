@@ -1,29 +1,8 @@
 import React from 'react';
 import './index.css';
 import RadialBar from './RadialBar';
+import { professionalSkillsData } from '../../API/data';
 
-const professionalSkillsData = [
-  {
-    presents: '95%',
-    text: 'Team Work',
-    id: 1,
-  },
-  {
-    presents: '90%',
-    text: 'Communication',
-    id: 2,
-  },
-  {
-    presents: '95%',
-    text: 'Fast learning',
-    id: 3,
-  },
-  {
-    presents: '85%',
-    text: 'Problem Solving',
-    id: 4,
-  },
-];
 const ProfessionalSkills = () => {
   return (
     <div className="container1">

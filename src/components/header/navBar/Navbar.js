@@ -1,15 +1,37 @@
 import React from 'react';
 import './index.css';
-const Navbar = () => {
+import useScreenSIze from '../../../hooks/useScreenSIze';
+
+const Navbar = ({ setOpen }) => {
+  const navData = [
+    { href: '#home', onClick: () => setOpen(false), text: 'Home' },
+    { href: '#about', onClick: () => setOpen(false), text: 'About' },
+    { href: '#education', onClick: () => setOpen(false), text: 'Education' },
+    { href: '#languages', onClick: () => setOpen(false), text: 'Languages' },
+    { href: '#skills', onClick: () => setOpen(false), text: 'Skills' },
+    { href: '#portfolio', onClick: () => setOpen(false), text: 'Portfolio' },
+    { href: '#contact', onClick: () => setOpen(false), text: 'Contact' },
+  ];
+  const isMobile = useScreenSIze();
   return (
     <nav className="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#languages">Languages</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
+      {isMobile ? (
+        <>
+          {navData.map((link, i) => (
+            <a key={i.toString()} href={link.href} onClick={link.onClick}>
+              {link.text}
+            </a>
+          ))}
+        </>
+      ) : (
+        <>
+          {navData.map((link, i) => (
+            <a key={i.toString()} href={link.href}>
+              {link.text}
+            </a>
+          ))}
+        </>
+      )}
     </nav>
   );
 };

@@ -5,16 +5,8 @@
     padding: 130px 10% 90px 10%;
     display: flex;
 }
-
-.contact-text h2{
-    font-size: 90px;
-    line-height: 1;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
-.contact-text h2 span{
-    color: #00eeff;
+.contact-text {
+    width: 100%;
 }
 
 .contact-text h4{
@@ -126,4 +118,13 @@
 .contact-form {
     display: flex;
     justify-content: flex-end;
+}
+
+@media (max-width: 768px){
+    .contact-text p {
+        font-size: 16px;
+    }
+    .contact-list {
+        flex-wrap: wrap;
+    }
 }

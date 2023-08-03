@@ -5,7 +5,7 @@
 }
 
 .home-avatar {
-    padding: 15px;
+    padding: 7px;
     height: fit-content;
     width: fit-content;
     border-radius: 50%;
@@ -22,7 +22,7 @@
     object-fit: cover;
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
+@media (max-width: 1024px){
     .avatar-wrap {
         width: 250px;
         height: 250px;

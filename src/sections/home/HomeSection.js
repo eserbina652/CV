@@ -10,9 +10,9 @@ const HomeSection = () => {
     <section className="home" id="home">
       <div className="home-content">
         <div className="home-description">
-          <h3>Hello, It's Me</h3>
+          <h3 className="top-text">Hello, It's Me</h3>
           <h1>Yevheniia Shcherbina</h1>
-          <h3>
+          <h3 className="jobsArrHome">
             And I'm a <JobsTyping />
           </h3>
           <p>

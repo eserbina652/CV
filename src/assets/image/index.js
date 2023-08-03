@@ -22,7 +22,9 @@ import RoutingSvg from './RoutingSvg';
 import TestSvg from './TestSvg';
 import UndefSvg from './UndefSvg';
 import WindowsSvg from './WindowsSvg';
-
+import BurgerMenuSvg from './BurgerMenuSvg';
+import BurgerSvg from './BurgerSvg';
+import CloseBtn from './CloseBtn';
 const Avatar = require('./avatar.jpeg');
 const FID = require('./Frontend-Developer-_4_.png');
 const RickAndMorty = require('./Frontend-Developer-_2_.png');
@@ -34,6 +36,9 @@ export {
   RickAndMorty,
   ShopPinkStore,
   MyPhoto,
+  BurgerSvg,
+  CloseBtn,
+  BurgerMenuSvg,
   ErrorsSvg,
   GitSvg,
   JsSvg,

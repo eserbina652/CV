@@ -47,7 +47,7 @@
     margin-bottom: 1.5rem;
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
+@media (max-width: 1024px){
     .about {
         justify-content: center;
         align-items: center;
@@ -58,5 +58,11 @@
     }
     .about-text h4{
         font-size: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    .about {
+        gap: 70px;
     }
 }

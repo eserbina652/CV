@@ -9,11 +9,13 @@ import ContactSection from './sections/contact/ContactSection';
 import { TopArrowSvg } from './assets/image';
 import './app.css';
 import Languages from './sections/languages/Languages';
-//Todo: dont forget to change all titles to component
+import useScreenSIze from './hooks/useScreenSIze';
+import BurgerMenu from './components/buttons/menu/burgerMenu/BurgerMenu';
 const App = () => {
+  const isMobile = useScreenSIze();
   return (
     <div className="app-container">
-      <Header />
+      {isMobile ? <BurgerMenu /> : <Header />}
       <HomeSection />
       <AboutSection />
       <EducationComponent />

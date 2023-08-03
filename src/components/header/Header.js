@@ -1,13 +1,14 @@
 import React from 'react';
 import './index.css';
 import Navbar from './navBar/Navbar';
+import Logo from './logo/Logo';
 const Header = () => {
   return (
     <header className="header">
-      <a href="#top" className="logo">
-        Portfolio
-      </a>
-      <Navbar />
+      <div className="header-content">
+        <Logo />
+        <Navbar />
+      </div>
     </header>
   );
 };

@@ -15,7 +15,7 @@ const RadialBar = ({ presents, text, id, isSkills = true }) => {
             }
       }
     >
-      <svg x="0px" y="0px" viewBox="0 0 200 200">
+      <svg className="radial-bar-svg" x="0px" y="0px" viewBox="0 0 200 200">
         <circle
           className="progress-bar"
           cx="100"
