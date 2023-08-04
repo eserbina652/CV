@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: flex-start;
     gap: 2rem;
+    margin-bottom: 40px;
 }
 
 .about-img{
@@ -13,7 +14,7 @@
 }
 
 .about-text{
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 
 /*.about-text h2{*/
@@ -64,5 +65,18 @@
 @media (max-width: 768px){
     .about {
         gap: 70px;
+    }
+}
+
+@media (max-width: 480px){
+    .about-text h4 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .about-content {
+        font-size: 14px;
+    }
+    .about {
+        margin-bottom: 0;
     }
 }

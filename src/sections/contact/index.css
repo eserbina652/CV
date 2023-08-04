@@ -4,6 +4,7 @@
     width: 100%;
     padding: 130px 10% 90px 10%;
     display: flex;
+    margin-bottom: 40px;
 }
 .contact-text {
     width: 100%;
@@ -126,5 +127,22 @@
     }
     .contact-list {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px){
+    .contact-text h4 {
+        font-size: 16px;
+    }
+    .contact-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .contact-list {
+        font-size: 14px;
+    }
+    .contact {
+        padding-top: 50px;
+        padding-bottom: 20px;
     }
 }

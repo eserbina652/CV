@@ -26,3 +26,11 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 480px){
+    .btn-box {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+}

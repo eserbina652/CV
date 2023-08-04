@@ -1,10 +1,10 @@
-.last-text p{
+.latest-text p{
     width: 100%;
     text-align: center;
-    padding: 25px 0;
-    background: rgb(7,85,91);
+    /*padding: 25px 0;*/
+    /*background: rgb(7,85,91);*/
     font-weight: 300;
-    margin-top: 70px;
+    /*margin-top: 70px;*/
 }
 
 .latest-text {
@@ -22,4 +22,13 @@
 
 .app-container {
     max-width: 100svw;
+}
+
+@media (max-width: 480px){
+    .top {
+        right: 0;
+    }
+    .latest-text p{
+        font-size: 14px;
+    }
 }

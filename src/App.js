@@ -8,7 +8,6 @@ import PortfolioSection from './sections/portfolio/PortfolioSection';
 import ContactSection from './sections/contact/ContactSection';
 import { TopArrowSvg } from './assets/image';
 import './app.css';
-import Languages from './sections/languages/Languages';
 import useScreenSIze from './hooks/useScreenSIze';
 import BurgerMenu from './components/buttons/menu/burgerMenu/BurgerMenu';
 const App = () => {
@@ -19,7 +18,6 @@ const App = () => {
       <HomeSection />
       <AboutSection />
       <EducationComponent />
-      <Languages />
       <SkillsComponent />
       <PortfolioSection />
       <ContactSection />

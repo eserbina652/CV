@@ -10,6 +10,7 @@
 .portfolio-section {
     width: 100%;
     padding: 50px 10%;
+    margin-bottom: 40px;
 }
 
 .row {
@@ -147,5 +148,26 @@
     }
     .row {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .layer h5 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .layer p {
+        font-size: 12px;
+    }
+    .layer {
+        padding: 0 10px;
+    }
+    .layer-links-box-wrap{
+        margin-top: 5px;
+    }
+    .layer a {
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
     }
 }

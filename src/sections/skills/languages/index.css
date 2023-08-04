@@ -1,9 +1,11 @@
 .lang-section {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 45%;
     flex-direction: column;
     padding: 0 10% 75px 10%;
+    margin-bottom: 40px;
+    margin-top: 5rem;
 }
 
 .lang-wrap {
@@ -12,4 +14,15 @@
     justify-content: center;
     gap: 50px;
     margin-top: 40px;
+}
+
+@media (max-width: 480px){
+    .lang-wrap {
+        gap: 5px;
+        margin: 0;
+    }
+    .lang-section {
+        margin: 0;
+        padding: 0;
+    }
 }

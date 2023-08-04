@@ -5,8 +5,21 @@ section{
 
 .container1 {
     display: flex;
+    justify-content: center;
+    width: 50%;
     flex-direction: column;
-    height: fit-content;
+    padding: 0 10% 75px 10%;
+    margin-bottom: 40px;
+    margin-top: 5rem;
+    align-items: baseline;
+    /*gap: 20px;*/
+}
+
+.round-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
 }
 
 .heading1{
@@ -27,7 +40,8 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50vw;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .Technical-bars .bar:first-child {
@@ -55,7 +69,7 @@ section{
     width: 100%;
     height: 5px;
     background-color: #000000;
-    animation: animate 1s cubic-bezier(1,0,0,2) forwards;
+    animation: animate 1s cubic-bezier(0,0,0,0) forwards;
     transform: scaleX(0);
     transform-origin: left;
 }
@@ -71,7 +85,7 @@ section{
     background-color: #00eeff;
     position: absolute;
     border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,2) forwards;
+    animation: animate 1s 1s cubic-bezier(1,0,0,1) forwards;
     transform: scaleX(0);
     transform-origin: left;
 }
@@ -377,6 +391,7 @@ section{
     justify-content: center;
     width: 100%;
     padding: 50px 10%;
+    margin-bottom: 40px;
 }
 
 
@@ -414,9 +429,37 @@ section{
     }
 }
 
-
-
-
+@media (max-width: 480px){
+    .text, .text1 {
+        font-size: 14px;
+    }
+    .heading1 {
+        text-decoration-thickness: 2px;
+    }
+    .info {
+        width: 75%;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Скрываем все, что выходит за пределы контейнера */
+        text-overflow: ellipsis;
+    }
+    .Technical-bars .bar .info span {
+        font-size: 14px;
+    }
+    .radial-bar-svg {
+        max-width: 50%;
+        min-width: 50%;
+    }
+    .radial-bars {
+        margin-bottom: 0;
+        height: fit-content;
+    }
+    .skill-section {
+        padding-top: 0;
+    }
+    .round-skills {
+        flex-direction: column;
+    }
+}
 
 
 

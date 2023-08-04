@@ -1,13 +1,12 @@
 import React from 'react';
-import RadialBar from '../skills/RadialBar';
+import RadialBar from '../RadialBar';
 import './index.css';
-import MainTitle from '../../components/title/MainTitle';
-import { languagesData } from '../../API/data';
+import { languagesData } from '../../../API/data';
 
 const Languages = () => {
   return (
     <section className="lang-section" id="languages">
-      <MainTitle simpleText="My" colorText="Languages" />
+      <h1 className="heading1">Languages</h1>
       <div className="lang-wrap">
         {languagesData.map((skill) => (
           <RadialBar

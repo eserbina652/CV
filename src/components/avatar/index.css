@@ -28,3 +28,13 @@
         height: 250px;
     }
 }
+
+@media (max-width: 480px){
+    .home-avatar {
+        margin-bottom: 30px;
+    }
+    .avatar-wrap {
+        width: 150px;
+        height: 150px;
+    }
+}

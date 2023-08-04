@@ -7,7 +7,7 @@ import JobsTyping from '../../components/customElements/JobsTyping';
 
 const HomeSection = () => {
   return (
-    <section className="home" id="home">
+    <section className="home" id="#">
       <div className="home-content">
         <div className="home-description">
           <h3 className="top-text">Hello, It's Me</h3>

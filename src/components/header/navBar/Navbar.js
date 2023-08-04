@@ -4,10 +4,9 @@ import useScreenSIze from '../../../hooks/useScreenSIze';
 
 const Navbar = ({ setOpen }) => {
   const navData = [
-    { href: '#home', onClick: () => setOpen(false), text: 'Home' },
+    { href: '#', onClick: () => setOpen(false), text: 'Home' },
     { href: '#about', onClick: () => setOpen(false), text: 'About' },
     { href: '#education', onClick: () => setOpen(false), text: 'Education' },
-    { href: '#languages', onClick: () => setOpen(false), text: 'Languages' },
     { href: '#skills', onClick: () => setOpen(false), text: 'Skills' },
     { href: '#portfolio', onClick: () => setOpen(false), text: 'Portfolio' },
     { href: '#contact', onClick: () => setOpen(false), text: 'Contact' },

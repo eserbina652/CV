@@ -3,14 +3,18 @@ import './index.css';
 import TechnicalSkills from './TechnicalSkills';
 import ProfessionalSkills from './ProfessionalSkills';
 import MainTitle from '../../components/title/MainTitle';
+import Languages from './languages/Languages';
 
 const SkillsComponent = () => {
   return (
-    <section className="skill-section">
+    <section className="skill-section" id="skills">
       <MainTitle simpleText="My" colorText="Skills" />
       <section className="skills-component">
         <TechnicalSkills />
-        <ProfessionalSkills />
+        <div className="round-skills">
+          <Languages />
+          <ProfessionalSkills />
+        </div>
       </section>
     </section>
   );

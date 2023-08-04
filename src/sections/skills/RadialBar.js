@@ -1,20 +1,18 @@
 import React from 'react';
 import './index.css';
+import useScreenSIze from '../../hooks/useScreenSIze';
 
 const RadialBar = ({ presents, text, id, isSkills = true }) => {
+  // const isMobile = useScreenSIze();
+  // // const langStyles = isMobile
+  // //   ? { minWidth: '80%', maxWidth: '80%', alignItems: 'center' }
+  // //   : {
+  // //       width: 'auto',
+  // //       flexDirection: 'column-reverse',
+  // //       alignItems: 'flex-start',
+  // //     };
   return (
-    <div
-      className="radial-bars"
-      style={
-        isSkills
-          ? { width: '100%' }
-          : {
-              width: 'auto',
-              flexDirection: 'column-reverse',
-              alignItems: 'flex-start',
-            }
-      }
-    >
+    <div className="radial-bars" style={{ width: '100%' }}>
       <svg className="radial-bar-svg" x="0px" y="0px" viewBox="0 0 200 200">
         <circle
           className="progress-bar"

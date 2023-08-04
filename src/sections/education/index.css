@@ -19,7 +19,7 @@
 .education {
     width: 100%;
     padding: 50px 10%;
-    margin-bottom: 10rem;
+    margin-bottom: 40px;
 }
 
 .services-list {
@@ -120,6 +120,22 @@
     }
     .education {
         margin-top: 20px;
-        margin-bottom: 5rem;
+        /*margin-bottom: 5rem;*/
+    }
+}
+
+@media (max-width: 480px){
+    .services-list div h2 {
+        font-size: 16px;
+    }
+    .service-el h4 {
+      font-size: 12px;
+    }
+    .service-el p {
+      font-size: 14px;
+    }
+    .education {
+        margin-top: 0;
+        padding-top: 0;
     }
 }

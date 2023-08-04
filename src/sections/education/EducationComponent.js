@@ -6,8 +6,8 @@ import { servicesData } from '../../API/data';
 
 const EducationComponent = () => {
   return (
-    <section className="education">
-      <div className="services" id="education">
+    <section className="education" id="education">
+      <div className="services">
         <div className="container">
           <MainTitle simpleText="My" colorText="Education" />
           <div className="services-list">

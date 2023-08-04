@@ -18,14 +18,14 @@ const AboutSection = () => {
       <div className="about-text">
         <MainTitle simpleText="About" colorText="Me" />
         <h4>React Developer</h4>
-        <span>
+        <div className="about-content">
           You can count on me at:
           <ul>
             {skillsArrayData.map((skill, i) => (
               <li key={i.toString()}>{skill}</li>
             ))}
           </ul>
-        </span>
+        </div>
         <MoreBtn href="#skills" text="More About my Skills" />
       </div>
     </section>

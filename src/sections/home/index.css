@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     padding: 70px 10%;
+    margin-bottom: 40px;
 }
 
 .home-content {
@@ -126,5 +127,31 @@
     }
     .home-content p {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+    .home-content {
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+    .home-description {
+        width: 100%;
+    }
+    .jobsArrHome{
+        min-height: 55px;
+    }
+    .home {
+        padding: 20px 10%;
+    }
+    .home-content h3 {
+        font-size: 16px;
+    }
+    .home-content h1 {
+        font-size: 25px;
+    }
+    .home-content p {
+        font-size: 12px;
     }
 }

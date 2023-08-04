@@ -4,7 +4,9 @@ import { BurgerMenuSvg } from '../../../../assets/image';
 import Logo from '../../../header/logo/Logo';
 import Navbar from '../../../header/navBar/Navbar';
 const BurgerMenu = () => {
-  const [isOpen, setOpen] = useState();
+  const [isOpen, setOpen] = useState(false);
+  const burgerActiveClass = isOpen ? 'open' : 'close';
+
   return (
     <div className="burgerMenu-wrap">
       <header className="burger-header">
@@ -13,11 +15,9 @@ const BurgerMenu = () => {
           <BurgerMenuSvg isOpen={isOpen} />
         </div>
       </header>
-      {isOpen && (
-        <div className="burgerMenu">
-          <Navbar setOpen={setOpen} />
-        </div>
-      )}
+      <div className={`burgerMenu ${burgerActiveClass}`}>
+        <Navbar setOpen={setOpen} />
+      </div>
     </div>
   );
 };
