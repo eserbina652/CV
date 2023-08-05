@@ -5,9 +5,9 @@ import { languagesData } from '../../../API/data';
 
 const Languages = () => {
   return (
-    <section className="lang-section" id="languages">
+    <section className="container1" id="languages">
       <h1 className="heading1">Languages</h1>
-      <div className="lang-wrap">
+      <div className="profSkillsWrap">
         {languagesData.map((skill) => (
           <RadialBar
             isSkills={false}

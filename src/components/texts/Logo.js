@@ -3,7 +3,7 @@ import './index.css';
 
 const Logo = () => {
   return (
-    <a href="#top" className="logo">
+    <a href="#" className="logo">
       Portfolio
     </a>
   );

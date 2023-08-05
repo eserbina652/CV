@@ -6,14 +6,14 @@ import EducationComponent from './sections/education/EducationComponent';
 import SkillsComponent from './sections/skills/SkillsComponent';
 import PortfolioSection from './sections/portfolio/PortfolioSection';
 import ContactSection from './sections/contact/ContactSection';
-import { TopArrowSvg } from './assets/image';
-import './app.css';
 import useScreenSIze from './hooks/useScreenSIze';
-import BurgerMenu from './components/buttons/menu/burgerMenu/BurgerMenu';
+import BurgerMenu from './components/header/burgerMenu/BurgerMenu';
+import TopBtn from './components/buttons/goToTop/TopBtn';
+import DevelopedBy from './components/texts/DevelopedBy';
 const App = () => {
   const isMobile = useScreenSIze();
   return (
-    <div className="app-container">
+    <div>
       {isMobile ? <BurgerMenu /> : <Header />}
       <HomeSection />
       <AboutSection />
@@ -21,12 +21,8 @@ const App = () => {
       <SkillsComponent />
       <PortfolioSection />
       <ContactSection />
-      <div className="latest-text">
-        <p>Developed with love by Yevheniia Shcherbina Ⓒ 2023</p>
-      </div>
-      <a href="#" className="top">
-        <TopArrowSvg />
-      </a>
+      <DevelopedBy />
+      <TopBtn />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { skillsData } from '../../API/data';
 
 const TechnicalSkills = () => {
   return (
-    <div className="container">
+    <div>
       <h1 className="heading1">Technical Skills</h1>
       <div className="Technical-bars">
         {skillsData.map((skillEl, i) => (

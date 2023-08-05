@@ -7,14 +7,16 @@ const ProfessionalSkills = () => {
   return (
     <div className="container1">
       <h1 className="heading1">Professional Skills</h1>
-      {professionalSkillsData.map((skill) => (
-        <RadialBar
-          key={skill.id}
-          presents={skill.presents}
-          text={skill.text}
-          id={skill.id}
-        />
-      ))}
+      <div className="profSkillsWrap">
+        {professionalSkillsData.map((skill) => (
+          <RadialBar
+            key={skill.id}
+            presents={skill.presents}
+            text={skill.text}
+            id={skill.id}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -21,7 +21,7 @@ import {
   TestSvg,
   UndefSvg,
   WindowsSvg,
-} from '../../assets/image';
+} from '../../assets/image/svg';
 import React from 'react';
 
 export const skillsArrayData = [
@@ -162,7 +162,7 @@ export const servicesData = [
   {
     svg: <CompScienceSvg />,
     title: 'Computer Science',
-    secondTitle: 'Will be Bachelor in 2021-2024',
+    secondTitle: 'Will be Bachelor in 2024',
     description:
       'Prydniprovska State Academy of Civil Engineering and Architecture, Ukraine',
     id: 2,
@@ -198,7 +198,7 @@ export const portfolioData = [
     technology: 'HTML, CSS, JavaScript Vanilla',
     id: 2,
     commercial: false,
-    hrefToWebSite: 'https://shop-pink-store.vercel.app/',
+    hrefToWebSite: 'https://eserbina652.github.io/JS-RickAndMorty-Project/',
     hrefToGitHub: 'https://github.com/eserbina652/JS-RickAndMorty-Project',
   },
   {

@@ -25,11 +25,11 @@ import WindowsSvg from './WindowsSvg';
 import BurgerMenuSvg from './BurgerMenuSvg';
 import BurgerSvg from './BurgerSvg';
 import CloseBtn from './CloseBtn';
-const Avatar = require('./avatar.jpeg');
-const FID = require('./Frontend-Developer-_4_.png');
-const RickAndMorty = require('./Frontend-Developer-_2_.png');
-const ShopPinkStore = require('./Frontend-Developer-_3_.png');
-const MyPhoto = require('./myPhoto.jpg');
+const Avatar = require('../jpg/avatar.jpeg');
+const FID = require('../png/Frontend-Developer-_4_.png');
+const RickAndMorty = require('../png/Frontend-Developer-_2_.png');
+const ShopPinkStore = require('../png/Frontend-Developer-_3_.png');
+const MyPhoto = require('../jpg/myPhoto.jpg');
 export {
   FID,
   Avatar,

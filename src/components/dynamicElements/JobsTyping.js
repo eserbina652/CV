@@ -20,7 +20,7 @@ const JobsTyping = () => {
     await new Promise((resolve) => setTimeout(resolve, 100));
     setJobs(jobText.slice(0, currentIndex + 1));
 
-    onAddLetter(jobText, currentIndex + 1);
+    await onAddLetter(jobText, currentIndex + 1);
   };
 
   useEffect(() => {

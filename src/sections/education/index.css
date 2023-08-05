@@ -1,25 +1,6 @@
-#services {
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-}
-
-.sub-title {
-    width: 100%;
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 70px;
-}
-
-.sub-title span {
-    color: #00eeff;
-}
-
 .education {
     width: 100%;
-    padding: 50px 10%;
-    margin-bottom: 40px;
+    padding: 200px 10% 0 10%;
 }
 
 .services-list {
@@ -34,7 +15,6 @@
     padding: 40px;
     font-size: 13px;
     font-weight: 13;
-    border-right: 10px;
     border-radius: 20px;
     transition: background-color 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px #da05ce, 1px 1px 40px #00eeff;
@@ -46,7 +26,7 @@
 }
 
 .services-list div h2{
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -57,28 +37,6 @@
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
-}
-
-.read {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #00eeff;
-    border-radius: 40px;
-    font-size: 16px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
-    box-shadow: 0 0 5px #00eeff, 0 0 25px #00eeff;
-}
-
-.read:hover {
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan;
 }
 
 .services-list div:hover {
@@ -101,8 +59,16 @@
     color: #00eeff;
 }
 
+@media (max-width: 1200px){
+    .services-list div h2 {
+        font-size: 24px;
+    }
+}
 
 @media (max-width: 1024px){
+    .service-el {
+        width: 100%;
+    }
     .services-list div {
         max-width: 680px;
         justify-content: center;
@@ -111,16 +77,21 @@
         justify-content: center;
     }
     .services-list div h2 {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 @media (max-width: 768px){
+    .services-list div h2 {
+        font-size: 18px;
+    }
     .services-list {
         margin-top: 30px;
     }
     .education {
-        margin-top: 20px;
-        /*margin-bottom: 5rem;*/
+        padding-top: 100px;
+    }
+    .service-el p{
+        font-size: 14px;
     }
 }
 
@@ -130,12 +101,5 @@
     }
     .service-el h4 {
       font-size: 12px;
-    }
-    .service-el p {
-      font-size: 14px;
-    }
-    .education {
-        margin-top: 0;
-        padding-top: 0;
     }
 }

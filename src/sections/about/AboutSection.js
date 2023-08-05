@@ -1,8 +1,8 @@
 import React from 'react';
-import AvatarComponent from '../../components/avatar/AvatarComponent';
+import AvatarComponent from '../../components/pictures/AvatarComponent';
 import './index.css';
 import MoreBtn from '../../components/buttons/moreBtn/MoreBtn';
-import { MyPhoto } from '../../assets/image';
+import { MyPhoto } from '../../assets/image/svg';
 import MainTitle from '../../components/title/MainTitle';
 import { skillsArrayData } from '../../API/data';
 
@@ -18,7 +18,7 @@ const AboutSection = () => {
       <div className="about-text">
         <MainTitle simpleText="About" colorText="Me" />
         <h4>React Developer</h4>
-        <div className="about-content">
+        <div className="about-description">
           You can count on me at:
           <ul>
             {skillsArrayData.map((skill, i) => (

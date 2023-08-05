@@ -7,21 +7,19 @@ import { servicesData } from '../../API/data';
 const EducationComponent = () => {
   return (
     <section className="education" id="education">
-      <div className="services">
-        <div className="container">
-          <MainTitle simpleText="My" colorText="Education" />
-          <div className="services-list">
-            {servicesData.map((service) => (
-              <EducationList
-                secondTitle={service.secondTitle}
-                href={service.href}
-                title={service.title}
-                description={service.description}
-                key={service.id}
-                svgComponent={service.svg}
-              />
-            ))}
-          </div>
+      <div>
+        <MainTitle simpleText="My" colorText="Education" />
+        <div className="services-list">
+          {servicesData.map((service) => (
+            <EducationList
+              secondTitle={service.secondTitle}
+              href={service.href}
+              title={service.title}
+              description={service.description}
+              key={service.id}
+              svgComponent={service.svg}
+            />
+          ))}
         </div>
       </div>
     </section>

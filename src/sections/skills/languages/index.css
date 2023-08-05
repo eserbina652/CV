@@ -1,28 +1,16 @@
 .lang-section {
     display: flex;
-    justify-content: center;
-    width: 45%;
+    justify-content: flex-start;
     flex-direction: column;
-    padding: 0 10% 75px 10%;
-    margin-bottom: 40px;
-    margin-top: 5rem;
 }
 
 .lang-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
+    min-width: 56%;
+    max-width: 56%;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (max-width: 480px){
-    .lang-wrap {
-        gap: 5px;
-        margin: 0;
-    }
-    .lang-section {
-        margin: 0;
-        padding: 0;
-    }
-}

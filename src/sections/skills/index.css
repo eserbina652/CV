@@ -6,20 +6,24 @@ section{
 .container1 {
     display: flex;
     justify-content: center;
-    width: 50%;
+    max-width: 45%;
+    min-width: 45%;
     flex-direction: column;
-    padding: 0 10% 75px 10%;
-    margin-bottom: 40px;
+    padding: 0 10%;
     margin-top: 5rem;
-    align-items: baseline;
-    /*gap: 20px;*/
 }
 
 .round-skills {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     width: 100%;
+}
+
+.profSkillsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .heading1{
@@ -28,6 +32,7 @@ section{
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
+    font-size: 18px;
 }
 
 .bar {
@@ -38,7 +43,6 @@ section{
 .Technical-bars {
     gap: 25px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
@@ -224,7 +228,7 @@ section{
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-bottom-width: 0px;
+    border-bottom-width: 0;
     border-right-width: 0;
     border-top-color: black;
     top: -10px;
@@ -239,10 +243,6 @@ section{
     }
 }
 
-.text {
-    width: 250px;
-}
-
 .text1 {
     text-shadow: 0 0 15px #00eeff;
     color: white;
@@ -251,19 +251,23 @@ section{
 }
 
 .radial-bars {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
+    align-items: center;
 }
 
 .radial-bars .radial-bar {
     width: 50%;
     height: 170px;
     position: relative;
+}
+.radial-bar-svg {
+    max-width: 50%;
+    min-width: 50%;
 }
 
 .radial-bars .radial-bar svg {
@@ -372,6 +376,10 @@ section{
     opacity: 0;
 }
 
+.svgText {
+    font-size: 30px;
+}
+
 .heading1 {
     text-align: center;
     text-decoration: underline;
@@ -390,74 +398,63 @@ section{
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 50px 10%;
-    margin-bottom: 40px;
+    padding: 200px 10% 0 10%;
 }
 
 
-@media (max-width: 1024px){
-    .Technical-bars {
-        justify-content: space-between;
-        width: auto;
+@media (max-width: 1200px){
+    .container1 {
+        padding: 0;
+    }
+    .svgText {
+        font-size: 27px;
+    }
+}
 
-    }
-    .skills-component {
-        justify-content: center;
-        gap: 70px;
-    }
-    .container1{
-        flex-direction: row;
-        height: fit-content;
-        flex-wrap: wrap;
-    }
+@media (max-width: 1024px){
     .heading1 {
-        margin: 0 auto;
-        margin-bottom: 50px;
+        text-decoration: none;
     }
-    .text {
-        display: flex;
-        align-items: center;
+    .svgText {
+        font-size: 24px;
     }
 }
 
 @media (max-width: 768px){
-    .skills-component {
-        margin-top: 20px;
-    }
-    .container1 {
-        width: 100%;
+    .svgText {
+        font-size: 21px;
     }
 }
 
 @media (max-width: 480px){
-    .text, .text1 {
-        font-size: 14px;
-    }
     .heading1 {
-        text-decoration-thickness: 2px;
+        margin-bottom: 10px;
     }
     .info {
         width: 75%;
-        white-space: nowrap; /* Запрещаем перенос строк */
-        overflow: hidden; /* Скрываем все, что выходит за пределы контейнера */
+        white-space: nowrap;
+        overflow: hidden;
         text-overflow: ellipsis;
     }
     .Technical-bars .bar .info span {
         font-size: 14px;
-    }
-    .radial-bar-svg {
-        max-width: 50%;
-        min-width: 50%;
     }
     .radial-bars {
         margin-bottom: 0;
         height: fit-content;
     }
     .skill-section {
-        padding-top: 0;
+        padding-top: 100px;
     }
     .round-skills {
+        gap: 2rem;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .container1 {
+        margin-top: 2rem;
     }
 }
 

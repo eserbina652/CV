@@ -1,5 +1,5 @@
 import React from 'react';
-import { PhoneSvg, SendSvg } from '../../assets/image';
+import { PhoneSvg, SendSvg } from '../../assets/image/svg';
 import './index.css';
 import HoveredLinks from '../../components/links/hoveredLinks/HoveredLinks';
 import MainTitle from '../../components/title/MainTitle';

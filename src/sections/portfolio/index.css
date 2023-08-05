@@ -9,8 +9,7 @@
 
 .portfolio-section {
     width: 100%;
-    padding: 50px 10%;
-    margin-bottom: 40px;
+    padding: 200px 10% 0 10%;
 }
 
 .row {
@@ -48,21 +47,21 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 17px;
     transition: height 0.5s;
 }
 
 .layer h5 {
     color: #00eeff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .layer p {
     color: white;
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .layer a:hover {
@@ -71,11 +70,11 @@
 
 .layer a {
     color: #ff004f;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 5px;
+    font-size: 14px;
     background: #00eeff;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,11 +99,11 @@
 
 .layer-links-box-wrap {
     display: flex;
-    margin-top: 20px;
+    margin-top: 5px;
     justify-content: center;
     width: 100%;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .layer-links-box{
@@ -135,39 +134,39 @@
         justify-content: center;
     }
     .row {
-        max-width: 65%;
+        max-width: 45%;
     }
 }
 
 @media (max-width: 768px){
     .portfolio-section {
-        padding: 0 10%;
+        padding-top: 100px;
     }
     .portfolio-content {
         margin-top: 40px;
     }
     .row {
-        max-width: 100%;
+        max-width: 70%;
     }
 }
 
 @media (max-width: 480px){
     .layer h5 {
-        font-size: 14px;
-        margin-bottom: 5px;
+        font-size: 12px;
+        margin-bottom: 3px;
     }
     .layer p {
-        font-size: 12px;
+        font-size: 10px;
+        line-height: 1.1;
     }
     .layer {
         padding: 0 10px;
     }
-    .layer-links-box-wrap{
-        margin-top: 5px;
-    }
     .layer a {
-        margin-top: 5px;
         width: 30px;
         height: 30px;
+    }
+    .portfolio-section {
+        padding-top: 100px;
     }
 }
