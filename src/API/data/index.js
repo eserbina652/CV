@@ -25,19 +25,17 @@ import {
 import React from 'react';
 
 export const skillsArrayData = [
-  'Dynamic & responsive website design.',
-  'State management for seamless experiences.',
-  'Maintainable UI component crafting.',
-  'Effective troubleshooting of complex issues.',
-  'Adapting projects to latest standards.',
-  'Collaborating within diverse teams.',
-  'Version control for efficient code management.',
-  'Deploying applications for accessibility.',
-  'Proficiency across multiple operating systems.',
-  'Visually captivating functional websites.',
-  'Smooth navigation implementation.',
-  'Prioritizing performance & accessibility.',
-  'Secure data handling & API interactions.',
+  'skill1',
+  'skill2',
+  'skill3',
+  'skill4',
+  'skill5',
+  'skill6',
+  'skill7',
+  'skill8',
+  'skill9',
+  'skill10',
+  'skill11',
 ];
 
 export const socialMediaData = [
@@ -153,26 +151,23 @@ export const skillsData = [
 export const servicesData = [
   {
     svg: <School />,
-    title: 'Architecture and construction',
-    secondTitle: 'Junior Specialist 2017-2021',
-    description:
-      'Dnipro State College of Construction - Assembly Technologies and Architecture, Ukraine',
+    title: 'educationTitle1',
+    secondTitle: 'education1Title2',
+    description: 'educationDescription1',
     id: 1,
   },
   {
     svg: <CompScienceSvg />,
-    title: 'Computer Science',
-    secondTitle: 'Will be Bachelor in 2024',
-    description:
-      'Prydniprovska State Academy of Civil Engineering and Architecture, Ukraine',
+    title: 'educationTitle2',
+    secondTitle: 'education2Title2',
+    description: 'educationDescription2',
     id: 2,
   },
   {
     svg: <BrainSvg />,
-    title: 'Mentorship with a Senior Developer',
-    secondTitle: 'Frontend developer student since 2021',
-    description:
-      'I have acquired solid theoretical and hands-on expertise through 1.5 years of education. I am capable of building desktop websites with React and developing applications using React Native.',
+    title: 'educationTitle3',
+    secondTitle: 'education3Title2',
+    description: 'educationDescription3',
     id: 3,
   },
 ];
@@ -181,20 +176,17 @@ export const portfolioData = [
   {
     img: FID,
     title: 'Gatsby/React Developer',
-    description:
-      'This site was created for the Ukrainian public organization "FID". My role in project was making the component layOut with custom routing/localization for further integration with the backend)',
+    description: 'portfolioDescription1',
     technology: 'Gatsby.js/React, JavaScript, react-icon-cloud, i18n',
     id: 1,
     commercial: true,
     hrefToWebSite: 'https://fid-freelance-a7lz7ry6j-eserbina652.vercel.app/',
-    hrefToGitHub:
-      "It was a commercial project, I don't have right to share the code",
+    hrefToGitHub: 'href1',
   },
   {
     img: RickAndMorty,
     title: 'Vanilla JavaScript Developer',
-    description:
-      'In this project you will see the one-page website with two sections, in the first one, there is an interactive table, and in the second a list of characters received from the server against which the Canvas is located.',
+    description: 'portfolioDescription2',
     technology: 'HTML, CSS, JavaScript Vanilla',
     id: 2,
     commercial: false,
@@ -204,8 +196,7 @@ export const portfolioData = [
   {
     img: ShopPinkStore,
     title: 'React.ts Developer',
-    description:
-      'In this project, authorization will be required to enter: username: kminchelle / password: 0lelplR. On the sections page, you can enjoy the Canvas, as well as go to the store to buy various goods, and many more interesting things, go and try)',
+    description: 'portfolioDescription3',
     technology:
       'TypeScript, React(hooks)/React-Router, Redux-Toolkit, Yup, Styled-components, Formik',
     id: 3,
@@ -217,46 +208,46 @@ export const portfolioData = [
 
 export const languagesData = [
   {
-    text: 'Upper-Intermediate',
-    presents: 'English',
+    presents: 'B2+',
+    text: 'lang1',
     id: '5',
   },
   {
-    text: 'Intermediate',
-    presents: 'Polish',
+    presents: 'B1',
+    text: 'lang2',
     id: '6',
   },
   {
-    text: 'Native Speaker',
-    presents: 'Ukrainian',
+    presents: 'C2',
+    text: 'lang3',
     id: '7',
   },
   {
-    text: 'Native Speaker',
-    presents: 'Russian',
+    presents: 'C2',
+    text: 'lang4',
     id: '8',
   },
 ];
 
 export const professionalSkillsData = [
   {
-    presents: '95%',
-    text: 'Team Work',
+    presents: '75%',
+    text: 'profText1',
     id: 1,
   },
   {
     presents: '90%',
-    text: 'Communication',
+    text: 'profText2',
     id: 2,
   },
   {
     presents: '95%',
-    text: 'Fast learning',
+    text: 'profText3',
     id: 3,
   },
   {
-    presents: '85%',
-    text: 'Problem Solving',
+    presents: '70%',
+    text: 'profText4',
     id: 4,
   },
 ];

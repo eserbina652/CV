@@ -3,22 +3,16 @@ import { PhoneSvg, SendSvg } from '../../assets/image/svg';
 import './index.css';
 import HoveredLinks from '../../components/links/hoveredLinks/HoveredLinks';
 import MainTitle from '../../components/title/MainTitle';
+import { useTranslation } from 'react-i18next';
 const ContactSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="contact" id="contact">
       <div className="contact-text">
-        <MainTitle simpleText="Contact" colorText="Me" />
-        <h4>Let's work Together</h4>
-        <p>
-          If you hire me as a Frontend developer, I feel that you will be
-          impressed by my strong work ethic, and my desire constantly improve.
-          Also I will work closely with other employees of the department, and
-          like a sponge adsorb all the knowledge, useful advice and guidance
-          from more experienced colleagues. I'll do my best to help your company
-          quickly achieve set goals and maintain your positions. <br />
-          <br />
-          Sincerely, Yevheniia
-        </p>
+        <MainTitle simpleText="simpleContact" colorText="colorMeContact" />
+        <h4>{t('letsWork')}</h4>
+        <p>{t('why')}</p>
+        <p>{t('sincerely')}</p>
         <div className="contact-list">
           <li>
             <a href="mailto:eserbina652@gmail.com">

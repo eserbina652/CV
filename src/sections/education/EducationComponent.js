@@ -8,7 +8,7 @@ const EducationComponent = () => {
   return (
     <section className="education" id="education">
       <div>
-        <MainTitle simpleText="My" colorText="Education" />
+        <MainTitle simpleText="simpleMy" colorText="colorEducation" />
         <div className="services-list">
           {servicesData.map((service) => (
             <EducationList

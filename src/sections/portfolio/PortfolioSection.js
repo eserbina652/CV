@@ -8,7 +8,7 @@ const PortfolioSection = () => {
   return (
     <section className="portfolio-section" id="portfolio">
       <div className="portfolio">
-        <MainTitle simpleText="Latest" colorText="Project" />
+        <MainTitle simpleText="simpleLatest" colorText="colorProjects" />
         <div className="portfolio-content">
           {portfolioData.map((project) => (
             <Project

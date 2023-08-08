@@ -36,211 +36,27 @@ section{
 }
 
 .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 23px;
-    width: 40%;
+    width: fit-content;
+}
+
+.bar span {
+    margin-left: 10px;
 }
 
 .Technical-bars {
-    gap: 25px;
+    gap: 15px;
     display: flex;
     flex-wrap: wrap;
+    background: #000f4857;
+    box-shadow:   1px 1px 20px #da05ce, 1px 1px 40px #00eeff;
+    border-radius: 2rem;
+    padding: 3rem;
     width: 100%;
-    justify-content: space-between;
-}
-
-.Technical-bars .bar:first-child {
-    margin-top: 0;
-}
-
-.Technical-bars .bar:last-child {
-    margin-bottom: 0;
-}
-
-.Technical-bars .bar .info{
-    margin-bottom: 5px ;
-}
-
-.Technical-bars .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
-.Technical-bars .bar .progress-line{
-    position: relative;
-    border-radius: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: #000000;
-    animation: animate 1s cubic-bezier(0,0,0,0) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-.Technical-bars .bar .progress-line span {
-    height: 100%;
-    background-color: #00eeff;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.progress-line.html span {
-    width: 99%;
-}
-
-.progress-line.css span {
-    width: 99%;
-}
-.progress-line.gitHub span {
-    width: 85%;
-}
-.progress-line.js span {
-    width: 85%
-}
-.progress-line.react span {
-    width: 88%
-}
-.progress-line.rRouter span {
-    width: 99%
-}
-.progress-line.redux span {
-    width: 89%
-}
-.progress-line.query span {
-    width: 89%
-}
-.progress-line.tests span {
-    width: 69%
-}
-.progress-line.formik span {
-    width: 95%
-}
-.progress-line.yup span {
-    width: 99%
-}
-.progress-line.i18n span {
-    width: 95%
-}
-.progress-line.styled span {
-    width: 89%
-}
-.progress-line.git span {
-    width: 80%
-}
-.progress-line.linux span {
-    width: 86%
-}
-.progress-line.windows span {
-    width: 90%
-}
-
-
- .progress-line span::after {
-     position: absolute;
-     padding: 1px 8px;
-     background-color: black;
-     color: white;
-     font-size: 12px;
-     border-radius: 3px;
-     top: -28px;
-     right: -20px;
-     animation: showText 0.5s 1.5s linear forwards;
-     opacity: 0;
- }
-
- .progress-line.html span::after {
-     content: '99%';
- }
-
-.progress-line.css span::after {
-    content: '99%';
-}
-.progress-line.gitHub span::after {
-    content: '85%';
-}
-
-.progress-line.js span::after {
-    content: '85%';
-}
-
-.progress-line.react span::after {
-    content: '88%';
-}
-
-.progress-line.rRouter span::after {
-    content: '99%';
-}
-
-.progress-line.redux span::after {
-    content: '89%';
-}
-
-.progress-line.query span::after {
-    content: '89%';
-}
-
-.progress-line.tests span::after {
-    content: '69%';
-}
-
-.progress-line.formik span::after {
-    content: '95%';
-}
-
-.progress-line.yup span::after {
-    content: '99%';
-}
-
-.progress-line.i18n span::after {
-    content: '95%';
-}
-
-.progress-line.styled span::after {
-    content: '89%';
-}
-
-.progress-line.git span::after {
-    content: '80%';
-}
-
-.progress-line.linux span::after {
-    content: '86%';
-}
-
-.progress-line.windows span::after {
-    content: '90%';
-}
-
-
-.progress-line.html span::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0;
-    border-right-width: 0;
-    border-top-color: black;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-@keyframes showText {
-    100%{
-        opacity: 1;
-    }
+    justify-content: flex-start;
 }
 
 .text1 {
@@ -248,12 +64,13 @@ section{
     color: white;
     font-size: 18px;
     width: max-content;
+    margin-left: 1rem;
 }
 
 .radial-bars {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
@@ -313,27 +130,27 @@ section{
 
 @keyframes animate-path1 {
     100% {
-        stroke-dashoffset: 25;
+        stroke-dashoffset: -100;
     }
 }
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 50;
+        stroke-dashoffset: -50;
     }
 }
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 25;
+        stroke-dashoffset: -25;
     }
 }
 @keyframes animate-path4 {
     100% {
-        stroke-dashoffset: 75;
+        stroke-dashoffset: -115;
     }
 }
 @keyframes animate-path5 {
     100% {
-        stroke-dashoffset: 150;
+        stroke-dashoffset: 200;
     }
 }
 @keyframes animate-path6 {
@@ -384,11 +201,12 @@ section{
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 2px;
     margin-bottom: 50px;
 }
 
 .skills-component{
+    width: 100%;
     align-items: flex-start;
     display: flex;
     justify-content: space-between;
@@ -401,6 +219,10 @@ section{
     padding: 200px 10% 0 10%;
 }
 
+.Technical-bars-wrap {
+    width: 100%;
+}
+
 
 @media (max-width: 1200px){
     .container1 {
@@ -408,6 +230,9 @@ section{
     }
     .svgText {
         font-size: 27px;
+    }
+    .bar {
+        font-size: 20px;
     }
 }
 
@@ -421,9 +246,23 @@ section{
 }
 
 @media (max-width: 768px){
-    .svgText {
-        font-size: 21px;
+    .radial-bars {
+        margin: 0;
     }
+    .path {
+        stroke-width: 5;
+    }
+    .bar {
+        font-size: 16px;
+    }
+    .round-skills {
+        flex-wrap: wrap;
+    }
+    .container1 {
+        width: fit-content;
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width: 480px){
@@ -436,7 +275,16 @@ section{
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .Technical-bars .bar .info span {
+    .Technical-bars {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .bar {
+        font-size: 14px;
+    }
+
+    .Technical-bars .info span {
         font-size: 14px;
     }
     .radial-bars {
@@ -455,6 +303,9 @@ section{
     }
     .container1 {
         margin-top: 2rem;
+    }
+    .text1 {
+        font-size: 16px;
     }
 }
 

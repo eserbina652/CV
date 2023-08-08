@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import { GoToSvg } from '../../assets/image/svg';
+import { useTranslation } from 'react-i18next';
 const Project = ({
   img,
   title,
@@ -10,14 +11,15 @@ const Project = ({
   technology,
   commercial,
 }) => {
+  const { t } = useTranslation();
   const isCommercial = () => {
     return commercial ? (
       <div className="layer-text-box">
-        <p>{gitHub}</p>
+        <p>{t(gitHub)}</p>
       </div>
     ) : (
       <div className="layer-links-box">
-        <p>Go to the gitHub</p>
+        <p>{t('goToGit')}</p>
         <a target="_blank" href={gitHub} rel="noreferrer">
           <GoToSvg />
         </a>
@@ -29,14 +31,14 @@ const Project = ({
     <div className="row">
       <img src={img} alt="latest project" />
       <div className="layer" style={{ color: 'white' }}>
-        <h5>{title}</h5>
-        <p>{description}</p>
+        <h5>{t(title)}</h5>
+        <p>{t(description)}</p>
         <p className="technologies">
-          Technologies used: <span>{technology}</span>
+          {t('technologyUse')} <span>{t(technology)}</span>
         </p>
         <div className="layer-links-box-wrap">
           <div className="layer-links-box">
-            <p>Go to the website</p>
+            <p>{t('goToWebsite')}</p>
             <a target="_blank" href={website} rel="noreferrer">
               <GoToSvg />
             </a>

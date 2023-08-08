@@ -8,7 +8,7 @@ import Languages from './languages/Languages';
 const SkillsComponent = () => {
   return (
     <section className="skill-section" id="skills">
-      <MainTitle simpleText="My" colorText="Skills" />
+      <MainTitle simpleText="simpleMySkills" colorText="colorSkills" />
       <section className="skills-component">
         <TechnicalSkills />
         <div className="round-skills">

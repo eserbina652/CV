@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-
-const iAmData = ['Frontend Developer', 'Android App Developer'];
+import { useTranslation } from 'react-i18next';
 
 const JobsTyping = () => {
+  const { t } = useTranslation();
+  const iAmData = [t('job1'), t('job2')];
+
   const [jobs, setJobs] = useState('');
   const [currentJobIndex, setCurrentJobIndex] = useState(0);
-
   const onAddLetter = async (jobText, currentIndex) => {
     if (currentIndex === jobText.length) {
       await new Promise((resolve) => setTimeout(resolve, 1000));

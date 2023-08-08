@@ -1,0 +1,20 @@
+.langBtn {
+    display: inline-flex;
+    font-size: 25px;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .langBtn {
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+    }
+}
