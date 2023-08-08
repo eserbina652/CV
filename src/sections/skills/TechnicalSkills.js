@@ -13,7 +13,6 @@ const TechnicalSkills = () => {
         {skillsData.map((skillEl, i) => (
           <SkillsBar
             svgComponent={skillEl.svgComponent}
-            additionalClass={skillEl.additionalClass}
             skill={skillEl.skill}
             key={i.toString()}
           />

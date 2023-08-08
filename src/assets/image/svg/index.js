@@ -25,6 +25,7 @@ import WindowsSvg from './WindowsSvg';
 import BurgerMenuSvg from './BurgerMenuSvg';
 import BurgerSvg from './BurgerSvg';
 import CloseBtn from './CloseBtn';
+import VercelSvg from './VercelSvg';
 const Avatar = require('../jpg/avatar.jpeg');
 const FID = require('../png/Frontend-Developer-_4_.png');
 const RickAndMorty = require('../png/Frontend-Developer-_2_.png');
@@ -36,6 +37,7 @@ export {
   RickAndMorty,
   ShopPinkStore,
   MyPhoto,
+  VercelSvg,
   BurgerSvg,
   CloseBtn,
   BurgerMenuSvg,
