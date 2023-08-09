@@ -17,6 +17,7 @@ section{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-top: 50px;
 }
 
 .profSkillsWrap {
@@ -224,7 +225,7 @@ section{
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 200px 10% 0 10%;
+    padding: 0 10%;
 }
 
 .Technical-bars-wrap {

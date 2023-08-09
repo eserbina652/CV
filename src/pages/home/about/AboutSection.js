@@ -1,10 +1,10 @@
 import React from 'react';
-import AvatarComponent from '../../components/pictures/AvatarComponent';
+import AvatarComponent from '../../../components/pictures/AvatarComponent';
 import './index.css';
-import MoreBtn from '../../components/buttons/moreBtn/MoreBtn';
-import { MyPhoto } from '../../assets/image/svg';
-import MainTitle from '../../components/title/MainTitle';
-import { skillsArrayData } from '../../API/data';
+import MoreBtn from '../../../components/buttons/moreBtn/MoreBtn';
+import { MyPhoto } from '../../../assets/image/svg';
+import MainTitle from '../../../components/title/MainTitle';
+import { skillsArrayData } from '../../../API/data';
 import { useTranslation } from 'react-i18next';
 
 const AboutSection = () => {

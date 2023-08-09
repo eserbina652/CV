@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import { useTranslation } from 'react-i18next';
-import useScreenSIze from '../../hooks/useScreenSIze';
+import useScreenSIze from '../../../hooks/useScreenSIze';
 
 const RadialBar = ({ presents, text, id, width = '100%', isLang = false }) => {
   const { t } = useTranslation();

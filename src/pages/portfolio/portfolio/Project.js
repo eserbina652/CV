@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { GoToSvg } from '../../assets/image/svg';
+import { GoToSvg } from '../../../assets/image/svg';
 import { useTranslation } from 'react-i18next';
 const Project = ({
   img,

@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css';
 import Project from './Project';
-import MainTitle from '../../components/title/MainTitle';
-import { portfolioData } from '../../API/data';
+import MainTitle from '../../../components/title/MainTitle';
+import { portfolioData } from '../../../API/data';
 
 const PortfolioSection = () => {
   return (

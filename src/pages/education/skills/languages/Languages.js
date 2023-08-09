@@ -1,7 +1,7 @@
 import React from 'react';
 import RadialBar from '../RadialBar';
 import './index.css';
-import { languagesData } from '../../../API/data';
+import { languagesData } from '../../../../API/data';
 import { useTranslation } from 'react-i18next';
 
 const Languages = () => {

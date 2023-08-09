@@ -1,6 +1,10 @@
 .education {
     width: 100%;
-    padding: 200px 10% 0 10%;
+    padding: 0 10% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
 }
 
 .services-list {
@@ -78,6 +82,9 @@
     }
     .services-list div h2 {
         font-size: 22px;
+    }
+    .education {
+        padding-top: 100px;
     }
 }
 @media (max-width: 768px){

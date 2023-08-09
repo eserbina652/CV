@@ -3,15 +3,14 @@ import './index.css';
 import useScreenSIze from '../../../hooks/useScreenSIze';
 import ChangeLangeBtn from '../../buttons/langBtn/ChangeLangeBtn';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ setOpen }) => {
   const navData = [
-    { href: '#', onClick: () => setOpen(false), text: 'home' },
-    { href: '#about', onClick: () => setOpen(false), text: 'about' },
-    { href: '#education', onClick: () => setOpen(false), text: 'education' },
-    { href: '#skills', onClick: () => setOpen(false), text: 'skills' },
-    { href: '#portfolio', onClick: () => setOpen(false), text: 'portfolio' },
-    { href: '#contact', onClick: () => setOpen(false), text: 'contact' },
+    { href: '/', onClick: () => setOpen(false), text: 'home' },
+    { href: '/education', onClick: () => setOpen(false), text: 'education' },
+    { href: '/portfolio', onClick: () => setOpen(false), text: 'portfolio' },
+    { href: '/contact', onClick: () => setOpen(false), text: 'contact' },
   ];
   const isMobile = useScreenSIze();
   const { t } = useTranslation();
@@ -21,18 +20,18 @@ const Navbar = ({ setOpen }) => {
         <>
           <ChangeLangeBtn />
           {navData.map((link, i) => (
-            <a key={i.toString()} href={link.href} onClick={link.onClick}>
+            <Link key={i.toString()} to={link.href} onClick={link.onClick}>
               {t(link.text)}
-            </a>
+            </Link>
           ))}
         </>
       ) : (
         <>
           <ChangeLangeBtn />
           {navData.map((link, i) => (
-            <a key={i.toString()} href={link.href}>
+            <Link key={i.toString()} to={link.href}>
               {t(link.text)}
-            </a>
+            </Link>
           ))}
         </>
       )}

@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import TechnicalSkills from './TechnicalSkills';
 import ProfessionalSkills from './ProfessionalSkills';
-import MainTitle from '../../components/title/MainTitle';
+import MainTitle from '../../../components/title/MainTitle';
 import Languages from './languages/Languages';
 
 const SkillsComponent = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import SkillsBar from './SkillsBar';
 import './index.css';
-import { skillsData } from '../../API/data';
+import { skillsData } from '../../../API/data';
 import { useTranslation } from 'react-i18next';
 
 const TechnicalSkills = () => {

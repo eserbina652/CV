@@ -1,28 +1,25 @@
 import React from 'react';
 import Header from './components/header/Header';
-import HomeSection from './sections/home/HomeSection';
-import AboutSection from './sections/about/AboutSection';
-import EducationComponent from './sections/education/EducationComponent';
-import SkillsComponent from './sections/skills/SkillsComponent';
-import PortfolioSection from './sections/portfolio/PortfolioSection';
-import ContactSection from './sections/contact/ContactSection';
+import ContactSection from './pages/contacts/ContactSection';
 import useScreenSIze from './hooks/useScreenSIze';
 import BurgerMenu from './components/header/burgerMenu/BurgerMenu';
-import TopBtn from './components/buttons/goToTop/TopBtn';
 import DevelopedBy from './components/texts/DevelopedBy';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/home/HomePage';
+import EducationPage from './pages/education/EducationPage';
+import PortfolioPage from './pages/portfolio/PortfolioPage';
 const App = () => {
   const isMobile = useScreenSIze();
   return (
     <div>
       {isMobile ? <BurgerMenu /> : <Header />}
-      <HomeSection />
-      <AboutSection />
-      <EducationComponent />
-      <SkillsComponent />
-      <PortfolioSection />
-      <ContactSection />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/education" element={<EducationPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/contact" element={<ContactSection />} />
+      </Routes>
       <DevelopedBy />
-      <TopBtn />
     </div>
   );
 };

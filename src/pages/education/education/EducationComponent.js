@@ -1,8 +1,8 @@
 import React from 'react';
 import EducationList from './EducationList';
 import './index.css';
-import MainTitle from '../../components/title/MainTitle';
-import { servicesData } from '../../API/data';
+import MainTitle from '../../../components/title/MainTitle';
+import { servicesData } from '../../../API/data';
 
 const EducationComponent = () => {
   return (
