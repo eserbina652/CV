@@ -230,21 +230,21 @@ export const professionalSkillsData = [
   {
     presents: '75%',
     text: 'profText1',
-    id: 1,
+    id: '1',
   },
   {
     presents: '90%',
     text: 'profText2',
-    id: 2,
+    id: '2',
   },
   {
     presents: '95%',
     text: 'profText3',
-    id: 3,
+    id: '3',
   },
   {
     presents: '70%',
     text: 'profText4',
-    id: 4,
+    id: '4',
   },
 ];
