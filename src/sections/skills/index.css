@@ -130,37 +130,37 @@ section{
 
 @keyframes animate-path1 {
     100% {
-        stroke-dashoffset: 375;
+        stroke-dashoffset: 210;
         /*stroke-dashoffset: 145;*/
     }
 }
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 450;
+        stroke-dashoffset: 175;
         /*stroke-dashoffset: 80;*/
     }
 }
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 475;
+        stroke-dashoffset: 165;
         /*stroke-dashoffset: 55;*/
     }
 }
 @keyframes animate-path4 {
     100% {
-        stroke-dashoffset: 350;
+        stroke-dashoffset: 240;
         /*stroke-dashoffset: 175;*/
     }
 }
 @keyframes animate-path5 {
     100% {
-        stroke-dashoffset: 360;
+        stroke-dashoffset: 260;
         /*stroke-dashoffset: 200;*/
     }
 }
 @keyframes animate-path6 {
     100% {
-        stroke-dashoffset: 280;
+        stroke-dashoffset: 300;
         /*stroke-dashoffset: 250;*/
     }
 }
