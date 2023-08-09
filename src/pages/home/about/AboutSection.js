@@ -28,7 +28,7 @@ const AboutSection = () => {
             ))}
           </ul>
         </div>
-        <MoreBtn href="#skills" text="moreAboutSkills" />
+        <MoreBtn link="/education/#skills" text="moreAboutSkills" />
       </div>
     </section>
   );
