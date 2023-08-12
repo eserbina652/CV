@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import TechnicalSkills from './TechnicalSkills';
+import TechnicalSkills from './tech/TechnicalSkills';
 import Languages from './languages/Languages';
 import { Skills } from '../index';
 

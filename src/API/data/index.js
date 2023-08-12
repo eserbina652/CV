@@ -207,44 +207,21 @@ export const languagesData = [
   {
     presents: 'B2+',
     text: 'lang1',
-    id: '5',
+    id: 1,
   },
   {
     presents: 'B1',
     text: 'lang2',
-    id: '6',
+    id: 2,
   },
   {
     presents: 'C2',
     text: 'lang3',
-    id: '7',
+    id: 3,
   },
   {
     presents: 'C2',
     text: 'lang4',
-    id: '8',
-  },
-];
-
-export const professionalSkillsData = [
-  {
-    presents: '75%',
-    text: 'profText1',
-    id: '1',
-  },
-  {
-    presents: '90%',
-    text: 'profText2',
-    id: '2',
-  },
-  {
-    presents: '95%',
-    text: 'profText3',
-    id: '3',
-  },
-  {
-    presents: '70%',
-    text: 'profText4',
-    id: '4',
+    id: 4,
   },
 ];

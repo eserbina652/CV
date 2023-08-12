@@ -1,7 +1,7 @@
 import React from 'react';
-import './index.css';
+import '../index.css';
 import { useTranslation } from 'react-i18next';
-import { SVGText, Text } from '../index';
+import { SVGText, Text } from '../../index';
 
 const RadialBar = ({ presents, text, id, width = '100%', isLang = false }) => {
   const { t } = useTranslation();

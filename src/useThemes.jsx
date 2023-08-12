@@ -5,7 +5,7 @@ export let isLight = true;
 const lightColors = {
   bg: {
     sectionsBg: '#c6c6c6',
-    headerBg: 'rgba(113,113,113,0.51)',
+    headerBg: 'rgb(113,113,113)',
     accent: '#e2e2e2',
   },
   fonts: {
@@ -16,7 +16,7 @@ const lightColors = {
 const darkColors = {
   bg: {
     sectionsBg: '#383838',
-    headerBg: 'rgba(85,85,85,0.48)',
+    headerBg: 'rgb(85,85,85)',
     accent: '#555555',
   },
   fonts: {

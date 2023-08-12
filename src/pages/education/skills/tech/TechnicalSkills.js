@@ -1,9 +1,9 @@
 import React from 'react';
 import SkillsBar from './SkillsBar';
-import './index.css';
-import { skillsData } from '../../../API/data';
-import MainTitle from '../../../components/title/MainTitle';
-import { TechnicalBar } from '../index';
+import '../index.css';
+import { skillsData } from '../../../../API/data';
+import MainTitle from '../../../../components/title/MainTitle';
+import { TechnicalBar } from '../../index';
 
 const TechnicalSkills = () => {
   return (

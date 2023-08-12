@@ -1,10 +1,9 @@
 import React from 'react';
-import RadialBar from '../RadialBar';
-import './index.css';
+import RadialBar from '../svgComponent/RadialBar';
 import { languagesData } from '../../../../API/data';
 import MainTitle from '../../../../components/title/MainTitle';
 import { ProfSkillsWrap } from '../../index';
-
+import '../index.css';
 const Languages = () => {
   return (
     <section className="container1" id="languages">

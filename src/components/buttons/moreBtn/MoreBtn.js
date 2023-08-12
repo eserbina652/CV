@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 import { useTranslation } from 'react-i18next';
 import { AStyled, LinkStyled } from './index';
 

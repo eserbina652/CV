@@ -11,13 +11,6 @@ section{
     margin-top: 7%;
 }
 
-.round-skills {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 50px;
-}
-
 .radial-bars {
     display: flex;
     flex-direction: column-reverse;
@@ -73,74 +66,26 @@ section{
 .path-2{animation: animate-path2 1s 1s linear forwards}
 .path-3{animation: animate-path3 1s 1s linear forwards}
 .path-4{animation: animate-path4 1s 1s linear forwards}
-.path-5{animation: animate-path5 1s 1s linear forwards}
-.path-6{animation: animate-path6 1s 1s linear forwards}
-.path-7{animation: animate-path7 1s 1s linear forwards}
-.path-8{animation: animate-path8 1s 1s linear forwards}
 
 @keyframes animate-path1 {
-    100% {
-        stroke-dashoffset: 210;
-    }
-}
-@keyframes animate-path2 {
-    100% {
-        stroke-dashoffset: 175;
-    }
-}
-@keyframes animate-path3 {
-    100% {
-        stroke-dashoffset: 165;
-    }
-}
-@keyframes animate-path4 {
-    100% {
-        stroke-dashoffset: 240;
-    }
-}
-@keyframes animate-path5 {
     100% {
         stroke-dashoffset: 260;
     }
 }
-@keyframes animate-path6 {
+@keyframes animate-path2 {
     100% {
         stroke-dashoffset: 300;
     }
 }
-@keyframes animate-path7 {
+@keyframes animate-path3 {
     100% {
         stroke-dashoffset: 0;
     }
 }
-@keyframes animate-path8 {
+@keyframes animate-path4 {
     100% {
         stroke-dashoffset: 0;
     }
-}
-
-.radial-bar .percentage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5 1s linear forwards;
-    opacity: 0;
-}
-
-.radial-bar .text {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    bottom: -5px;
-    transform: translate(-50px);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
 }
 
 .skills-component{
@@ -192,9 +137,6 @@ section{
     .path {
         stroke-width: 5;
     }
-    .round-skills {
-        flex-wrap: wrap;
-    }
     .container1 {
         margin-top: 80px;
         max-width: 100%;
@@ -216,13 +158,6 @@ section{
     .radial-bars {
         margin-bottom: 0;
         height: fit-content;
-    }
-    .round-skills {
-        gap: 2rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
     }
     .container1 {
         margin-top: 5rem;
