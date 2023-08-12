@@ -4,11 +4,13 @@ import './index.css';
 import HoveredLinks from '../../components/links/hoveredLinks/HoveredLinks';
 import MainTitle from '../../components/title/MainTitle';
 import { useTranslation } from 'react-i18next';
+import { Contact, ContactText } from './index';
+
 const ContactSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="contact" id="contact">
-      <div className="contact-text">
+    <Contact id="contact">
+      <ContactText>
         <MainTitle simpleText="simpleContact" colorText="colorMeContact" />
         <h4>{t('letsWork')}</h4>
         <p>{t('why')}</p>
@@ -28,8 +30,8 @@ const ContactSection = () => {
         <div className="contact-icons">
           <HoveredLinks />
         </div>
-      </div>
-    </section>
+      </ContactText>
+    </Contact>
   );
 };
 

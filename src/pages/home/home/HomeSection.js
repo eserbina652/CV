@@ -5,13 +5,14 @@ import AvatarComponent from '../../../components/pictures/AvatarComponent';
 import MoreBtn from '../../../components/buttons/moreBtn/MoreBtn';
 import JobsTyping from '../../../components/dynamicElements/JobsTyping';
 import { useTranslation } from 'react-i18next';
+import { Home, HomeDescription } from '../index';
 
 const HomeSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="home" id="#">
+    <Home id="#">
       <div className="home-content">
-        <div className="home-description">
+        <HomeDescription>
           <h3>{t('hello')}</h3>
           <h1>{t('name')}</h1>
           <h3 className="jobsArrHome">
@@ -19,11 +20,11 @@ const HomeSection = () => {
           </h3>
           <p>{t('homeDescription')}</p>
           <HoveredLinks />
-          <MoreBtn href={'#about'} text={'moreAboutMe'} />
-        </div>
+          <MoreBtn href="#about" text={'moreAboutMe'} />
+        </HomeDescription>
         <AvatarComponent />
       </div>
-    </section>
+    </Home>
   );
 };
 

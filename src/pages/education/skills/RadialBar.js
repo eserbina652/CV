@@ -1,11 +1,10 @@
 import React from 'react';
 import './index.css';
 import { useTranslation } from 'react-i18next';
-import useScreenSIze from '../../../hooks/useScreenSIze';
+import { SVGText, Text } from '../index';
 
 const RadialBar = ({ presents, text, id, width = '100%', isLang = false }) => {
   const { t } = useTranslation();
-  const isMobile = useScreenSIze();
   return (
     <div className="radial-bars" style={{ width }}>
       <svg className="radial-bar-svg" x="0px" y="0px" viewBox="0 0 200 200">
@@ -17,24 +16,12 @@ const RadialBar = ({ presents, text, id, width = '100%', isLang = false }) => {
           fill="none"
           strokeWidth="20"
         ></circle>
-        <circle
-          className={`path path-${id}`}
-          cx="100"
-          cy="100"
-          r={isMobile ? '60' : '80'}
-        ></circle>
-        <text
-          className="svgText"
-          x="50%"
-          y="50%"
-          textAnchor="middle"
-          dy="0.3em"
-          fill="white"
-        >
+        <circle className={`path path-${id}`} cx="100" cy="100" r="60"></circle>
+        <SVGText x="50%" y="50%" textAnchor="middle" dy="0.3em">
           {isLang ? t(presents) : presents}
-        </text>
+        </SVGText>
       </svg>
-      <div className={'text1'}>{t(text)}</div>
+      <Text>{t(text)}</Text>
     </div>
   );
 };

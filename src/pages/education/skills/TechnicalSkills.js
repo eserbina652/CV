@@ -2,14 +2,14 @@ import React from 'react';
 import SkillsBar from './SkillsBar';
 import './index.css';
 import { skillsData } from '../../../API/data';
-import { useTranslation } from 'react-i18next';
+import MainTitle from '../../../components/title/MainTitle';
+import { TechnicalBar } from '../index';
 
 const TechnicalSkills = () => {
-  const { t } = useTranslation();
   return (
     <div className="Technical-bars-wrap">
-      <h1 className="heading1">{t('techskills')}</h1>
-      <div className="Technical-bars">
+      <MainTitle simpleText="tech" colorText="skillsT" />
+      <TechnicalBar>
         {skillsData.map((skillEl, i) => (
           <SkillsBar
             svgComponent={skillEl.svgComponent}
@@ -17,7 +17,7 @@ const TechnicalSkills = () => {
             key={i.toString()}
           />
         ))}
-      </div>
+      </TechnicalBar>
     </div>
   );
 };

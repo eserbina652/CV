@@ -3,10 +3,11 @@ import './index.css';
 import Project from './Project';
 import MainTitle from '../../../components/title/MainTitle';
 import { portfolioData } from '../../../API/data';
+import { Portfolio } from '../index';
 
 const PortfolioSection = () => {
   return (
-    <section className="portfolio-section" id="portfolio">
+    <Portfolio id="portfolio">
       <div className="portfolio">
         <MainTitle simpleText="simpleLatest" colorText="colorProjects" />
         <div className="portfolio-content">
@@ -24,7 +25,7 @@ const PortfolioSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Portfolio>
   );
 };
 

@@ -4,13 +4,6 @@
     font-weight: 300;
 }
 
-.latest-text {
-    width: 100%;
-    position: static;
-    bottom: 10px;
-    padding: 50px 0 20px 0;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -26,15 +19,12 @@
 
 @media (max-width: 1024px){
     .logo {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
     .latest-text p{
         font-size: 12px;
-    }
-    .latest-text {
-        padding: 20px 10% 10px 10%;
     }
 }

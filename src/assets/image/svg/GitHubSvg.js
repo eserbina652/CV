@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GitHubSvg = ({ color = 'rgba(0, 238, 255, 1)' }) => {
+const GitHubSvg = ({ color = '#fd40eb' }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -5,11 +5,11 @@ import TopBtn from '../../components/buttons/goToTop/TopBtn';
 
 const EducationPage = () => {
   return (
-    <div>
-      <EducationComponent />
+    <>
       <SkillsComponent />
+      <EducationComponent />
       <TopBtn />
-    </div>
+    </>
   );
 };
 

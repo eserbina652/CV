@@ -7,7 +7,7 @@ const BurgerSvg = () => {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      style={{ fill: 'rgba(0, 238, 255, 1)' }}
+      style={{ fill: '#fd40eb' }}
     >
       <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
     </svg>

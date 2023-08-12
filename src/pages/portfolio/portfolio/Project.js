@@ -2,6 +2,8 @@ import React from 'react';
 import './index.css';
 import { GoToSvg } from '../../../assets/image/svg';
 import { useTranslation } from 'react-i18next';
+import { Row } from '../index';
+
 const Project = ({
   img,
   title,
@@ -28,7 +30,7 @@ const Project = ({
   };
 
   return (
-    <div className="row">
+    <Row>
       <img src={img} alt="latest project" />
       <div className="layer" style={{ color: 'white' }}>
         <h5>{t(title)}</h5>
@@ -46,7 +48,7 @@ const Project = ({
           {isCommercial()}
         </div>
       </div>
-    </div>
+    </Row>
   );
 };
 

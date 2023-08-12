@@ -42,25 +42,25 @@ export const skillsArrayData = [
 export const socialMediaData = [
   {
     svg: (isHovered) => (
-      <TelegramSvg color={isHovered ? '#091b2a' : '#00eeff'} />
+      <TelegramSvg color={isHovered ? '#c6c6c6' : '#fd40eb'} />
     ),
     href: 'https://t.me/evserbina',
     id: 1,
   },
   {
     svg: (isHovered) => (
-      <LinkedInSvg color={isHovered ? '#091b2a' : '#00eeff'} />
+      <LinkedInSvg color={isHovered ? '#c6c6c6' : '#fd40eb'} />
     ),
     href: 'https://www.linkedin.com/in/yevheniia-shcherbina-628517259/',
     id: 2,
   },
   {
-    svg: (isHovered) => <GitHubSvg color={isHovered ? '#091b2a' : '#00eeff'} />,
+    svg: (isHovered) => <GitHubSvg color={isHovered ? '#c6c6c6' : '#fd40eb'} />,
     href: 'https://github.com/eserbina652',
     id: 3,
   },
   {
-    svg: (isHovered) => <GMailSvg color={isHovered ? '#091b2a' : '#00eeff'} />,
+    svg: (isHovered) => <GMailSvg color={isHovered ? '#c6c6c6' : '#fd40eb'} />,
     href: 'mailto:eserbina652@gmail.com',
     id: 4,
   },

@@ -1,22 +1,17 @@
 import React from 'react';
 import './index.css';
 import TechnicalSkills from './TechnicalSkills';
-import ProfessionalSkills from './ProfessionalSkills';
-import MainTitle from '../../../components/title/MainTitle';
 import Languages from './languages/Languages';
+import { Skills } from '../index';
 
 const SkillsComponent = () => {
   return (
-    <section className="skill-section" id="skills">
-      <MainTitle simpleText="simpleMySkills" colorText="colorSkills" />
+    <Skills>
       <section className="skills-component">
         <TechnicalSkills />
-        <div className="round-skills">
-          <Languages />
-          <ProfessionalSkills />
-        </div>
+        <Languages />
       </section>
-    </section>
+    </Skills>
   );
 };
 

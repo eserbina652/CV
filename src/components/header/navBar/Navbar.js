@@ -4,6 +4,7 @@ import useScreenSIze from '../../../hooks/useScreenSIze';
 import ChangeLangeBtn from '../../buttons/langBtn/ChangeLangeBtn';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import ChangeThemeBtn from '../../buttons/changeTheme/ChangeThemeBtn';
 
 const Navbar = ({ setOpen }) => {
   const navData = [
@@ -18,6 +19,7 @@ const Navbar = ({ setOpen }) => {
     <nav className="navbar">
       {isMobile ? (
         <>
+          <ChangeThemeBtn />
           <ChangeLangeBtn />
           {navData.map((link, i) => (
             <Link key={i.toString()} to={link.href} onClick={link.onClick}>
@@ -27,6 +29,7 @@ const Navbar = ({ setOpen }) => {
         </>
       ) : (
         <>
+          <ChangeThemeBtn />
           <ChangeLangeBtn />
           {navData.map((link, i) => (
             <Link key={i.toString()} to={link.href}>

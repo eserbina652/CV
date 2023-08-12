@@ -9,7 +9,7 @@
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #00eeff;
+    border: 2px solid #fd40eb;
     border-radius: 50%;
     font-size: 20px;
     text-decoration: none;
@@ -21,8 +21,8 @@
 }
 
 .home-sci a:hover {
-    background-color: #00eeff;
-    box-shadow: 0 0 20px #00eeff;
+    background-color: #fd40eb;
+    box-shadow: 0 0 20px #fd40eb;
 }
 
 @keyframes slideLeft {

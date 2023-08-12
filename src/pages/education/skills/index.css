@@ -6,11 +6,9 @@ section{
 .container1 {
     display: flex;
     justify-content: center;
-    max-width: 45%;
-    min-width: 45%;
+    width: 100%;
     flex-direction: column;
-    padding: 0 10%;
-    margin-top: 5rem;
+    margin-top: 7%;
 }
 
 .round-skills {
@@ -20,72 +18,23 @@ section{
     padding-top: 50px;
 }
 
-.profSkillsWrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.heading1{
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-    margin-bottom: 50px;
-    font-size: 18px;
-}
-
-.bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 23px;
-    width: fit-content;
-}
-
-.bar span {
-    margin-left: 10px;
-}
-
-.Technical-bars {
-    gap: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    background: #000f4857;
-    box-shadow:   1px 1px 20px #da05ce, 1px 1px 40px #00eeff;
-    border-radius: 2rem;
-    padding: 3rem;
-    width: 100%;
-    justify-content: flex-start;
-}
-
-.text1 {
-    text-shadow: 0 0 15px #00eeff;
-    color: white;
-    font-size: 18px;
-    width: max-content;
-    margin-left: 1rem;
-}
-
 .radial-bars {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: flex-start;
-    height: 170px;
+    height: 268px;
     margin-bottom: 10px;
-    position: relative;
     align-items: center;
 }
 
 .radial-bars .radial-bar {
     width: 50%;
-    height: 170px;
+    height: fit-content;
     position: relative;
 }
 .radial-bar-svg {
-    max-width: 50%;
-    min-width: 50%;
+    max-width: 75%;
+    min-width: 75%;
 }
 
 .radial-bars .radial-bar svg {
@@ -113,7 +62,7 @@ section{
 
 .path {
     stroke-width: 10;
-    stroke: #00eeff;
+    stroke: #fd40eb;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -132,49 +81,41 @@ section{
 @keyframes animate-path1 {
     100% {
         stroke-dashoffset: 210;
-        /*stroke-dashoffset: 145;*/
     }
 }
 @keyframes animate-path2 {
     100% {
         stroke-dashoffset: 175;
-        /*stroke-dashoffset: 80;*/
     }
 }
 @keyframes animate-path3 {
     100% {
         stroke-dashoffset: 165;
-        /*stroke-dashoffset: 55;*/
     }
 }
 @keyframes animate-path4 {
     100% {
         stroke-dashoffset: 240;
-        /*stroke-dashoffset: 175;*/
     }
 }
 @keyframes animate-path5 {
     100% {
         stroke-dashoffset: 260;
-        /*stroke-dashoffset: 200;*/
     }
 }
 @keyframes animate-path6 {
     100% {
         stroke-dashoffset: 300;
-        /*stroke-dashoffset: 250;*/
     }
 }
 @keyframes animate-path7 {
     100% {
         stroke-dashoffset: 0;
-        /*stroke-dashoffset: 0;*/
     }
 }
 @keyframes animate-path8 {
     100% {
         stroke-dashoffset: 0;
-        /*stroke-dashoffset: 0;*/
     }
 }
 
@@ -202,53 +143,41 @@ section{
     opacity: 0;
 }
 
-.svgText {
-    font-size: 30px;
-}
-
-.heading1 {
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 2px;
-    margin-bottom: 50px;
-}
-
 .skills-component{
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.skill-section {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 10%;
-}
 
 .Technical-bars-wrap {
     width: 100%;
 }
 
 
+@media (max-width: 1400px){
+    .radial-bars{
+        height: 234px;
+    }
+}
+
 @media (max-width: 1200px){
+    .radial-bars{
+        height: 208px;
+    }
     .container1 {
         padding: 0;
     }
     .svgText {
         font-size: 27px;
     }
-    .bar {
-        font-size: 20px;
-    }
 }
 
 @media (max-width: 1024px){
-    .heading1 {
-        text-decoration: none;
-    }
+    .radial-bars{
+        height: 182px;
+}
     .svgText {
         font-size: 24px;
     }
@@ -256,52 +185,37 @@ section{
 
 @media (max-width: 768px){
     .radial-bars {
-        margin: 0;
+        margin-bottom: 0;
+        max-width: 50%;
+        height: fit-content;
     }
     .path {
         stroke-width: 5;
-    }
-    .bar {
-        font-size: 16px;
     }
     .round-skills {
         flex-wrap: wrap;
     }
     .container1 {
-        width: fit-content;
+        margin-top: 80px;
         max-width: 100%;
+    }
+    .profSkillsWrap {
+        margin-top: 50px;
+        flex-wrap: wrap;
     }
 
 }
 
 @media (max-width: 480px){
-    .heading1 {
-        margin-bottom: 10px;
-    }
     .info {
         width: 75%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .Technical-bars {
-        padding: 30px;
-        max-width: 100%;
-    }
-
-    .bar {
-        font-size: 14px;
-    }
-
-    .Technical-bars .info span {
-        font-size: 14px;
-    }
     .radial-bars {
         margin-bottom: 0;
         height: fit-content;
-    }
-    .skill-section {
-        padding-top: 100px;
     }
     .round-skills {
         gap: 2rem;
@@ -311,10 +225,7 @@ section{
         margin-top: 2rem;
     }
     .container1 {
-        margin-top: 2rem;
-    }
-    .text1 {
-        font-size: 16px;
+        margin-top: 5rem;
     }
 }
 

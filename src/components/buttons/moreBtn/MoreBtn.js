@@ -1,20 +1,16 @@
 import React from 'react';
 import './index.css';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { AStyled, LinkStyled } from './index';
 
-const MoreBtn = ({ href, link, text, className }) => {
+const MoreBtn = ({ link, text, href }) => {
   const { t } = useTranslation();
   return (
     <>
       {href ? (
-        <a href={href} className={`btn-box ${className}`}>
-          {t(text)}
-        </a>
+        <AStyled href={href}>{t(text)}</AStyled>
       ) : (
-        <Link to={link} className={`btn-box ${className}`}>
-          {t(text)}
-        </Link>
+        <LinkStyled to={link}>{t(text)}</LinkStyled>
       )}
     </>
   );

@@ -1,9 +1,11 @@
 import React from 'react';
 import './index.css';
 import { Avatar } from '../../assets/image/svg';
+import { AvatarWrap } from './index';
+
 const AvatarComponent = ({ styles, src = Avatar }) => {
   return (
-    <div className="home-avatar">
+    <AvatarWrap>
       <div
         className="avatar-wrap"
         style={
@@ -14,7 +16,7 @@ const AvatarComponent = ({ styles, src = Avatar }) => {
       >
         <img className="avatar" src={src} alt="Shcherbina's avatar" />
       </div>
-    </div>
+    </AvatarWrap>
   );
 };
 

@@ -2,14 +2,14 @@ import React from 'react';
 import RadialBar from '../RadialBar';
 import './index.css';
 import { languagesData } from '../../../../API/data';
-import { useTranslation } from 'react-i18next';
+import MainTitle from '../../../../components/title/MainTitle';
+import { ProfSkillsWrap } from '../../index';
 
 const Languages = () => {
-  const { t } = useTranslation();
   return (
     <section className="container1" id="languages">
-      <h1 className="heading1">{t('languages')}</h1>
-      <div className="profSkillsWrap">
+      <MainTitle simpleText="simpleMySkills" colorText="languages" />
+      <ProfSkillsWrap>
         {languagesData.map((skill) => (
           <RadialBar
             isLang={true}
@@ -19,7 +19,7 @@ const Languages = () => {
             id={skill.id}
           />
         ))}
-      </div>
+      </ProfSkillsWrap>
     </section>
   );
 };

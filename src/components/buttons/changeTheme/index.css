@@ -1,0 +1,9 @@
+.theme-btn {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .theme-btn {
+        width: 100%;
+    }
+}

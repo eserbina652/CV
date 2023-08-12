@@ -1,15 +1,15 @@
 import React from 'react';
-import './index.css';
 import { useTranslation } from 'react-i18next';
+import { Title } from './index';
 
-const MainTitle = ({ simpleText, colorText }) => {
+const MainTitle = ({ simpleText, colorText = '' }) => {
   const { t } = useTranslation();
   return (
-    <div className="mainTitle">
+    <Title>
       <h2>
         {t(simpleText)} <span>{t(colorText)}</span>
       </h2>
-    </div>
+    </Title>
   );
 };
 

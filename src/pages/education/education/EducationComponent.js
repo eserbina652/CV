@@ -1,15 +1,15 @@
 import React from 'react';
 import EducationList from './EducationList';
-import './index.css';
 import MainTitle from '../../../components/title/MainTitle';
 import { servicesData } from '../../../API/data';
+import { Education, ServiceContainer } from '../index';
 
 const EducationComponent = () => {
   return (
-    <section className="education" id="education">
+    <Education>
       <div>
         <MainTitle simpleText="simpleMy" colorText="colorEducation" />
-        <div className="services-list">
+        <ServiceContainer>
           {servicesData.map((service) => (
             <EducationList
               secondTitle={service.secondTitle}
@@ -20,9 +20,9 @@ const EducationComponent = () => {
               svgComponent={service.svg}
             />
           ))}
-        </div>
+        </ServiceContainer>
       </div>
-    </section>
+    </Education>
   );
 };
 
