@@ -12,8 +12,8 @@
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
-    animation: slideBottom 1s ease forwards;
-    animation-delay: 3s;
+    animation: slideRight 2s cubic-bezier(0.18, 0.09, 0.32, 1.28) forwards;
+    animation-delay: 1s;
 }
 
 .home-content h1 {

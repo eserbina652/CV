@@ -10,7 +10,7 @@ import { Home, HomeDescription } from '../index';
 const HomeSection = () => {
   const { t } = useTranslation();
   return (
-    <Home id="#">
+    <Home>
       <div className="home-content">
         <HomeDescription>
           <h3>{t('hello')}</h3>

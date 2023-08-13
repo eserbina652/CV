@@ -191,6 +191,14 @@ export const TechnicalBar = styled.ol`
   justify-content: center;
   list-style: none;
   counter-reset: li;
+  & li:nth-child(odd) {
+    animation: slide-in-left 1s ease-in-out forwards;
+  }
+
+  & li:nth-child(even) {
+    animation: slide-in-right 1s ease-in-out forwards;
+  }
+
   & li {
     align-items: center;
     border-radius: 10px;
@@ -245,4 +253,34 @@ export const TechnicalBar = styled.ol`
       font-size: 12px;
     }
   }
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  //@keyframes rotate {
+  //  0% {
+  //    transform: rotate(0deg);
+  //  }
+  //  100% {
+  //    transform: rotate(360deg);
+  //  }
+  //}
 `;

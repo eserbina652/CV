@@ -6,7 +6,7 @@ import { LatestText } from './index';
 const DevelopedBy = () => {
   const { t } = useTranslation();
   return (
-    <LatestText className="latest-text">
+    <LatestText>
       <p>{t('developedBy')}</p>
     </LatestText>
   );

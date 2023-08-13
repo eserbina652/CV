@@ -7,6 +7,9 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 .contact-list a {

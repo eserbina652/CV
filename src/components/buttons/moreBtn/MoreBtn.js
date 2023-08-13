@@ -1,16 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { AStyled, LinkStyled } from './index';
+import { AStyled } from './index';
 
-const MoreBtn = ({ link, text, href }) => {
+const MoreBtn = ({ text, href }) => {
   const { t } = useTranslation();
   return (
     <>
-      {href ? (
-        <AStyled href={href}>{t(text)}</AStyled>
-      ) : (
-        <LinkStyled to={link}>{t(text)}</LinkStyled>
-      )}
+      <AStyled href={href}>{t(text)}</AStyled>
     </>
   );
 };

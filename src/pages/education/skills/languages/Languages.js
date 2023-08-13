@@ -6,7 +6,7 @@ import { ProfSkillsWrap } from '../../index';
 import '../index.css';
 const Languages = () => {
   return (
-    <section className="container1" id="languages">
+    <section className="container1">
       <MainTitle simpleText="simpleMySkills" colorText="languages" />
       <ProfSkillsWrap>
         {languagesData.map((skill) => (

@@ -1,6 +1,7 @@
 {
   "home": "Główna",
   "about": "O mnie",
+  "aboutMe": "O Mnie",
   "education": "Oświata",
   "skills": "Zdolności",
   "portfolio": "Portfolio",
@@ -64,7 +65,7 @@
   "goToWebsite": "Przejdź do serwisu",
   "letsWork": "Popracujmy razem!",
   "why": "Jeśli mnie zaakceptujecie do waszego zespołu, jestem przekonana, że będziecie mile zaskoczone moją silną etyką pracy oraz moją determinacją w ciągłym doskonaleniu się. Oczywiście, będę się bardzo starała, aby dobrze współpracować z wszystkimi kolegami z pracy i chłonąć jak gąbka nową wiedzę oraz przydatne porady bardziej doświadczonych kolegów.Obiecuję, że zrobię wszystko, co w mojej mocy, aby pomóc waszej korporacji szybko osiągnąć wyznaczone cele i utrzymać swoją pozycję.",
-  "sincerely": "Z poważaniem, Jewgienija",
+  "sincerely": "Z poważaniem, Jewgienija!",
   "tech": "Umiejętności",
   "skillsT": "Techniczne",
   "developedBy": "Opracowany z miłością przez Yevheniia Shcherbina Ⓒ 2023"

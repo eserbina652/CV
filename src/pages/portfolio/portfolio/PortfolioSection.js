@@ -7,7 +7,7 @@ import { Portfolio } from '../index';
 
 const PortfolioSection = () => {
   return (
-    <Portfolio id="portfolio">
+    <Portfolio>
       <div className="portfolio">
         <MainTitle simpleText="simpleLatest" colorText="colorProjects" />
         <div className="portfolio-content">

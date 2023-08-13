@@ -8,7 +8,9 @@ export const Title = styled.div`
   color: ${(props) => props.theme.colors.fonts.primary};
   position: relative;
   z-index: 20;
-
+  opacity: 0;
+  animation: slideTop 1s cubic-bezier(0.18, 0.09, 0.32, 1.28) forwards;
+  transition: 2.5s ease;
   & span {
     color: #fd40eb;
   }

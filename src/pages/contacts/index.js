@@ -24,6 +24,16 @@ export const ContactText = styled.div`
   width: 100%;
   color: ${(props) => props.theme.colors.fonts.primary};
   font-size: 20px;
+  & p {
+    transition: 0.1s;
+    opacity: 0;
+    animation: slideBottom 1s cubic-bezier(0.18, 0.09, 0.32, 1.28) forwards;
+  }
+  & h4 {
+    transition: 0.1s;
+    opacity: 0;
+    animation: slideTop 1s cubic-bezier(0.18, 0.09, 0.32, 1.28) forwards;
+  }
   & h4 {
     margin: 15px 0;
     font-weight: 600;

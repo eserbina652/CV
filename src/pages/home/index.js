@@ -33,6 +33,19 @@ export const TextContainer = styled.div`
     color: ${(props) => props.theme.colors.fonts.primary};
     line-height: 1.7;
     margin: 15px 0 30px;
+    transition: 0.1s;
+    opacity: 0;
+    animation: slideBottom 1s cubic-bezier(0.18, 0.09, 0.32, 1.28) forwards;
+  }
+  & ul li:nth-child(even) {
+    transition: 1.5s;
+    opacity: 0;
+    animation: slideLeft 2s cubic-bezier(0.18, 1.5, 0.32, 1.28) forwards;
+  }
+  & ul li:nth-child(odd) {
+    transition: 1.5s;
+    opacity: 0;
+    animation: slideRight 2s cubic-bezier(0.18, 1.5, 0.32, 1.28) forwards;
   }
   & ul {
     margin-top: 1rem;

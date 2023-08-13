@@ -9,7 +9,7 @@ import { Contact, ContactText } from './index';
 const ContactSection = () => {
   const { t } = useTranslation();
   return (
-    <Contact id="contact">
+    <Contact>
       <ContactText>
         <MainTitle simpleText="simpleContact" colorText="colorMeContact" />
         <h4>{t('letsWork')}</h4>

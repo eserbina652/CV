@@ -8,8 +8,8 @@ import ChangeThemeBtn from '../../buttons/changeTheme/ChangeThemeBtn';
 
 const Navbar = ({ setOpen }) => {
   const navData = [
-    { href: '/', onClick: () => setOpen(false), text: 'home' },
-    { href: '/education', onClick: () => setOpen(false), text: 'education' },
+    { href: '/', onClick: () => setOpen(false), text: 'aboutMe' },
+    { href: '/education', onClick: () => setOpen(false), text: 'skills' },
     { href: '/portfolio', onClick: () => setOpen(false), text: 'portfolio' },
     { href: '/contact', onClick: () => setOpen(false), text: 'contact' },
   ];

@@ -24,6 +24,10 @@ import {
   WindowsSvg,
 } from '../../assets/image/svg';
 import React from 'react';
+import HomePage from '../../pages/home/HomePage';
+import EducationPage from '../../pages/education/EducationPage';
+import PortfolioPage from '../../pages/portfolio/PortfolioPage';
+import ContactSection from '../../pages/contacts/ContactSection';
 
 export const skillsArrayData = [
   'skill1',
@@ -224,4 +228,11 @@ export const languagesData = [
     text: 'lang4',
     id: 4,
   },
+];
+
+export const routesData = [
+  { path: '/', Component: <HomePage /> },
+  { path: '/education', Component: <EducationPage /> },
+  { path: '/portfolio', Component: <PortfolioPage /> },
+  { path: '/contact', Component: <ContactSection /> },
 ];

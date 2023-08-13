@@ -7,6 +7,9 @@ export const AvatarWrap = styled.div`
   border-radius: 50%;
   border: 5px solid white;
   filter: drop-shadow(0 0 10px #fd40eb);
+  transition: 0.1s;
+  opacity: 0;
+  animation: slideTop 1s cubic-bezier(0.18, 0.09, 0.32, 1.28) forwards;
   box-shadow:
     0 0 5px ${(props) => props.theme.colors.fonts.primary},
     0 0 25px ${(props) => props.theme.colors.fonts.primary},

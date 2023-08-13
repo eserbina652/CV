@@ -29,7 +29,7 @@ const AboutSection = () => {
             ))}
           </ul>
         </div>
-        <MoreBtn link="/education" text="moreAboutSkills" />
+        <MoreBtn href="/education" text="moreAboutSkills" />
       </TextContainer>
     </About>
   );

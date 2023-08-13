@@ -15,9 +15,9 @@
     text-decoration: none;
     font-weight: 500;
     margin-left: 15px;
-    transition: .3s;
+    transition: .10s;
     opacity: 0;
-    animation: slideTop .5s ease forwards;
+    animation: slideTop 1s cubic-bezier(0.18, 0.09, 0.32, 1.28) forwards;
 }
 
 .navbar a:hover {

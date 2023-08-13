@@ -3,7 +3,7 @@ import './index.css';
 import { BurgerMenuSvg } from '../../../assets/image/svg';
 import Logo from '../../texts/Logo';
 import Navbar from '../navBar/Navbar';
-import { HeaderWrap } from '../index';
+import { BurgerWrap, HeaderWrap } from '../index';
 
 const BurgerMenu = () => {
   const [isOpen, setOpen] = useState(false);
@@ -12,9 +12,9 @@ const BurgerMenu = () => {
     <div>
       <HeaderWrap>
         <Logo />
-        <div onClick={() => setOpen(!isOpen)}>
+        <BurgerWrap onClick={() => setOpen(!isOpen)}>
           <BurgerMenuSvg isOpen={isOpen} />
-        </div>
+        </BurgerWrap>
       </HeaderWrap>
       <div className={`burgerMenu ${burgerActiveClass}`}>
         <Navbar setOpen={setOpen} />
