@@ -7,7 +7,6 @@ import { Skills } from '../index';
 const SkillsComponent = () => {
   return (
     <Skills>
-      <input name="t" style={{ top: 0, position: 'absolute' }} />
       <section className="skills-component">
         <TechnicalSkills />
         <Languages />
