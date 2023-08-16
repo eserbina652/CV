@@ -1,16 +1,16 @@
 import React from 'react';
 import './index.css';
 import useScreenSIze from '../../../hooks/useScreenSIze';
-import ChangeLangeBtn from '../../buttons/langBtn/ChangeLangeBtn';
+import ChangeLangeBtn from '../../../components/buttons/langBtn/ChangeLangeBtn';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import ChangeThemeBtn from '../../buttons/changeTheme/ChangeThemeBtn';
+import ChangeThemeBtn from '../../../components/buttons/changeTheme/ChangeThemeBtn';
 
 const Navbar = ({ setOpen }) => {
   const navData = [
     { href: '/', onClick: () => setOpen(false), text: 'aboutMe' },
     { href: '/education', onClick: () => setOpen(false), text: 'skills' },
-    { href: '/portfolio', onClick: () => setOpen(false), text: 'portfolio' },
+    { href: '/experience', onClick: () => setOpen(false), text: 'experience' },
     { href: '/contact', onClick: () => setOpen(false), text: 'contact' },
   ];
   const isMobile = useScreenSIze();

@@ -87,8 +87,12 @@ export const HomeDescription = styled.div`
   width: 50%;
   color: ${(props) => props.theme.colors.fonts.primary};
 
+  & h3, h1 {
+    font-family: 'LobsterRegular', sans-serif;!important;
+  }
   & h3 span {
     color: #fd40eb;
+    font-family: 'LobsterRegular', sans-serif;!important;
   }
 
   @media (max-width: 480px) {

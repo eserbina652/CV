@@ -92,7 +92,7 @@ const DrawingCanvas = () => {
         setShouldErase(false);
       },
       false
-    );
+    )
     canvas.addEventListener('mouseout', stop, false);
   }, []);
 

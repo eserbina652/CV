@@ -9,6 +9,7 @@
 }
 
 .navbar a {
+    font-family: 'LobsterRegular', sans-serif;
     display: inline-block;
     font-size: 22px;
     color: #ffffff;

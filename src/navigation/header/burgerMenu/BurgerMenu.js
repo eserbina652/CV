@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import { BurgerMenuSvg } from '../../../assets/image/svg';
-import Logo from '../../texts/Logo';
+import Logo from '../../../components/texts/Logo';
 import Navbar from '../navBar/Navbar';
 import { BurgerWrap, HeaderWrap } from '../index';
 

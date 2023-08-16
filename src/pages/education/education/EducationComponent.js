@@ -12,12 +12,11 @@ const EducationComponent = () => {
         <ServiceContainer>
           {servicesData.map((service) => (
             <EducationList
+              mentor={service.mentor}
               secondTitle={service.secondTitle}
-              href={service.href}
               title={service.title}
               description={service.description}
               key={service.id}
-              svgComponent={service.svg}
             />
           ))}
         </ServiceContainer>

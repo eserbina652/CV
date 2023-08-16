@@ -8,6 +8,7 @@ export const LatestText = styled.div`
   padding: 50px 0 20px 0;
   color: ${(props) => props.theme.colors.fonts.primary};
   & p {
+    font-family: 'LobsterRegular', sans-serif;
     position: relative;
     z-index: 3;
     width: 100%;

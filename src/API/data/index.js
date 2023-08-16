@@ -1,6 +1,4 @@
 import {
-  BrainSvg,
-  CompScienceSvg,
   CssSvg,
   ErrorsSvg,
   FID,
@@ -14,7 +12,6 @@ import {
   ReduxSvg,
   RickAndMorty,
   RoutingSvg,
-  School,
   ShopPinkStore,
   SkillsHTMLSvg,
   TelegramSvg,
@@ -26,7 +23,7 @@ import {
 import React from 'react';
 import HomePage from '../../pages/home/HomePage';
 import EducationPage from '../../pages/education/EducationPage';
-import PortfolioPage from '../../pages/portfolio/PortfolioPage';
+import PortfolioPage from '../../pages/experience/PortfolioPage';
 import ContactSection from '../../pages/contacts/ContactSection';
 
 export const skillsArrayData = [
@@ -151,22 +148,22 @@ export const skillsData = [
 
 export const servicesData = [
   {
-    svg: <School />,
     title: 'educationTitle1',
     secondTitle: 'education1Title2',
+    mentor: null,
     description: 'educationDescription1',
     id: 1,
   },
   {
-    svg: <CompScienceSvg />,
     title: 'educationTitle2',
     secondTitle: 'education2Title2',
     description: 'educationDescription2',
+    mentor: null,
     id: 2,
   },
   {
-    svg: <BrainSvg />,
     title: 'educationTitle3',
+    mentor: 'https://www.linkedin.com/in/vanlesson/',
     secondTitle: 'education3Title2',
     description: 'educationDescription3',
     id: 3,
@@ -233,6 +230,31 @@ export const languagesData = [
 export const routesData = [
   { path: '/', Component: <HomePage /> },
   { path: '/education', Component: <EducationPage /> },
-  { path: '/portfolio', Component: <PortfolioPage /> },
+  { path: '/experience', Component: <PortfolioPage /> },
   { path: '/contact', Component: <ContactSection /> },
+];
+
+export const workExpData = [
+  {
+    jobTitle: 'job1TitleName',
+    dateOfWork: '2021.08 - 2022.01',
+    companyName: 'USPICH 2000',
+    skills: 'Figma, Archicad, Adobe Illustrator/Photoshop, HTML&CSS',
+    website: {
+      link: 'https://www.behance.net/eserbina652f46',
+      name: 'Behance',
+    },
+    location: 'location1Name',
+  },
+  {
+    jobTitle: 'job2TitleName',
+    dateOfWork: '2023.04 - 2023.05',
+    companyName: 'FID',
+    skills: 'Gatsby.js/React, JavaScript, react-icon-cloud, i18n',
+    website: {
+      link: 'https://fid-freelance-a7lz7ry6j-eserbina652.vercel.app/',
+      name: 'Vercel',
+    },
+    location: 'location2Name',
+  },
 ];

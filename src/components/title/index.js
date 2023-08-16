@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Title = styled.div`
+  & h2 {
+    font-family: 'LobsterRegular', sans-serif;!important;
+  }
   width: 100%;
   text-align: center;
   font-size: 40px;
@@ -13,6 +16,7 @@ export const Title = styled.div`
   transition: 2.5s ease;
   & span {
     color: #fd40eb;
+    font-family: 'LobsterRegular', sans-serif;
   }
 
   @media (max-width: 1024px) {

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import Header from './components/header/Header';
+import Header from './navigation/header/Header';
 import useScreenSIze from './hooks/useScreenSIze';
-import BurgerMenu from './components/header/burgerMenu/BurgerMenu';
+import BurgerMenu from './navigation/header/burgerMenu/BurgerMenu';
 import DevelopedBy from './components/texts/DevelopedBy';
 import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';

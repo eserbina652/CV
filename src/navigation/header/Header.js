@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import Navbar from './navBar/Navbar';
-import Logo from '../texts/Logo';
+import Logo from '../../components/texts/Logo';
 import { HeaderWrap } from './index';
 
 const Header = () => {

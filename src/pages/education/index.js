@@ -98,7 +98,17 @@ export const Service = styled.div`
   & p {
     font-size: 18px;
   }
-  & h2 {
+  & a:hover {
+    transition: 0.5s ease-in-out;
+    color: white;
+  }
+  & a {
+    color: ${(props) => props.theme.colors.fonts.primary};
+    margin-bottom: 1rem;
+  }
+  & h2,
+  a {
+    font-family: 'LobsterRegular', sans-serif;
     font-size: 24px;
   }
   & h4 {
@@ -110,7 +120,8 @@ export const Service = styled.div`
     & p {
       font-size: 16px;
     }
-    & h2 {
+    & h2,
+    a {
       font-size: 22px;
     }
   }
@@ -121,7 +132,8 @@ export const Service = styled.div`
     & p {
       font-size: 14px;
     }
-    & h2 {
+    & h2,
+    a {
       font-size: 20px;
     }
     & h4 {
@@ -151,6 +163,7 @@ export const ProfSkillsWrap = styled.div`
 export const SVGText = styled.text`
   fill: ${(props) => props.theme.colors.fonts.primary};
   font-size: 30px;
+  font-family: 'LobsterRegular', sans-serif;
   @media (max-width: 1200px) {
     font-size: 27px;
   }
@@ -161,6 +174,7 @@ export const SVGText = styled.text`
 
 export const Text = styled.div`
   text-shadow: 0 0 15px #fd40eb;
+  font-family: 'LobsterRegular', sans-serif;
   color: ${(props) => props.theme.colors.fonts.primary};
   font-size: 24px;
   width: max-content;
@@ -200,6 +214,7 @@ export const TechnicalBar = styled.ol`
   }
 
   & li {
+    font-family: 'LobsterRegular', sans-serif;
     align-items: center;
     border-radius: 10px;
     display: flex;
@@ -253,34 +268,4 @@ export const TechnicalBar = styled.ol`
       font-size: 12px;
     }
   }
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide-in-right {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  //@keyframes rotate {
-  //  0% {
-  //    transform: rotate(0deg);
-  //  }
-  //  100% {
-  //    transform: rotate(360deg);
-  //  }
-  //}
 `;

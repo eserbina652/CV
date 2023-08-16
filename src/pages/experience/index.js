@@ -4,11 +4,8 @@ export const Portfolio = styled.section`
   width: 100%;
   min-height: 90svh;
   height: fit-content;
-  padding: 130px 10% 0 10%;
+  padding: 0 10%;
   background-color: ${(props) => props.theme.colors.bg.sectionsBg};
-  @media (max-width: 768px) {
-    padding-top: 100px;
-  }
 `;
 
 export const Row = styled.div`
