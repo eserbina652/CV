@@ -1,9 +1,15 @@
 canvas {
-    cursor: pointer;
+    cursor: url('../../assets/image/png/paint-regular-24.png'), auto;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    canvas {
+        cursor: auto;
+    }
 }

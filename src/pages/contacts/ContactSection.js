@@ -12,7 +12,6 @@ const ContactSection = () => {
   return (
     <Contact>
       <DrawingCanvas />
-      <h6>{t('interactiveSection')}</h6>
       <ContactText>
         <MainTitle simpleText="simpleContact" colorText="colorMeContact" />
         <h4>{t('letsWork')}</h4>
