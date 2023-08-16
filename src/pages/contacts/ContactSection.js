@@ -5,23 +5,27 @@ import HoveredLinks from '../../components/links/hoveredLinks/HoveredLinks';
 import MainTitle from '../../components/title/MainTitle';
 import { useTranslation } from 'react-i18next';
 import { Contact, ContactText } from './index';
+import DrawingCanvas from '../../components/canvas/DrawingCanvas';
 
 const ContactSection = () => {
   const { t } = useTranslation();
   return (
     <Contact>
+      <DrawingCanvas />
+      <h6>{t('interactiveSection')}</h6>
       <ContactText>
         <MainTitle simpleText="simpleContact" colorText="colorMeContact" />
         <h4>{t('letsWork')}</h4>
         <p>{t('why')}</p>
         <p>{t('sincerely')}</p>
         <div className="contact-list">
-          <li>
-            <a href="mailto:eserbina652@gmail.com">
+          <a href="mailto:eserbina652@gmail.com">
+            <li>
               <SendSvg />
-            </a>
-            eserbina652@gmail.com
-          </li>
+              eserbina652@gmail.com
+            </li>
+          </a>
+
           <li>
             <PhoneSvg />
             +48733796743

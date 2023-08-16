@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const LatestText = styled.div`
   background-color: ${(props) => props.theme.colors.bg.sectionsBg};
   width: 100%;
-  position: static;
-  bottom: 10px;
+  bottom: 0;
   min-height: 5vh;
   padding: 50px 0 20px 0;
   color: ${(props) => props.theme.colors.fonts.primary};
   & p {
+    position: relative;
+    z-index: 3;
     width: 100%;
     text-align: center;
     font-weight: 300;
