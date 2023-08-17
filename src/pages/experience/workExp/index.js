@@ -6,6 +6,9 @@ export const WorkSection = styled.section`
   @media (max-width: 1024px) {
     padding-bottom: 100px;
   }
+  @media (max-width: 480px) {
+    padding-top: 100px;
+  }
 `;
 export const WorkExpList = styled.ul`
   list-style: none;
